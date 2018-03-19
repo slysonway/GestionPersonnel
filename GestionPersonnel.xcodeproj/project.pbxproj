@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F1E1407206019CE004BEBF2 /* PNGUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E1403206019CD004BEBF2 /* PNGUtils.c */; };
+		8F1E1408206019CE004BEBF2 /* qrcodegen.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E1406206019CE004BEBF2 /* qrcodegen.c */; };
+		8F1E143220601A43004BEBF2 /* libpng16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E142620601A43004BEBF2 /* libpng16.a */; };
+		8F1E143320601A43004BEBF2 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E142720601A43004BEBF2 /* libpng.a */; };
+		8F1E143420601A43004BEBF2 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E142820601A43004BEBF2 /* libpng16.16.dylib */; };
+		8F1E143520601A43004BEBF2 /* libpng.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E142920601A43004BEBF2 /* libpng.dylib */; };
+		8F1E143620601A43004BEBF2 /* libpng16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E142A20601A43004BEBF2 /* libpng16.dylib */; };
 		8FED540A2057DD780003C1E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FED54092057DD780003C1E7 /* main.c */; };
 		8FED54122057DD950003C1E7 /* library.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FED54112057DD950003C1E7 /* library.c */; };
-		8FED542420593EB30003C1E7 /* qrcodegen.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FED542220593EB30003C1E7 /* qrcodegen.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,12 +31,40 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8F1E1403206019CD004BEBF2 /* PNGUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PNGUtils.c; sourceTree = "<group>"; };
+		8F1E1404206019CE004BEBF2 /* qrcodegen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrcodegen.h; sourceTree = "<group>"; };
+		8F1E1405206019CE004BEBF2 /* PNGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNGUtils.h; sourceTree = "<group>"; };
+		8F1E1406206019CE004BEBF2 /* qrcodegen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrcodegen.c; sourceTree = "<group>"; };
+		8F1E140E20601A43004BEBF2 /* INSTALL_RECEIPT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = INSTALL_RECEIPT.json; sourceTree = "<group>"; };
+		8F1E140F20601A43004BEBF2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8F1E141120601A43004BEBF2 /* png-fix-itxt */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "png-fix-itxt"; sourceTree = "<group>"; };
+		8F1E141220601A43004BEBF2 /* libpng16-config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "libpng16-config"; sourceTree = "<group>"; };
+		8F1E141320601A43004BEBF2 /* pngfix */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pngfix; sourceTree = "<group>"; };
+		8F1E141420601A43004BEBF2 /* libpng-config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "libpng-config"; sourceTree = "<group>"; };
+		8F1E141620601A43004BEBF2 /* libpng.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = libpng.rb; sourceTree = "<group>"; };
+		8F1E141720601A43004BEBF2 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		8F1E141A20601A43004BEBF2 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		8F1E141B20601A43004BEBF2 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		8F1E141C20601A43004BEBF2 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		8F1E141D20601A43004BEBF2 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		8F1E141E20601A43004BEBF2 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		8F1E141F20601A43004BEBF2 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		8F1E142020601A43004BEBF2 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		8F1E142120601A43004BEBF2 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		8F1E142420601A43004BEBF2 /* libpng16.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpng16.pc; sourceTree = "<group>"; };
+		8F1E142520601A43004BEBF2 /* libpng.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpng.pc; sourceTree = "<group>"; };
+		8F1E142620601A43004BEBF2 /* libpng16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng16.a; sourceTree = "<group>"; };
+		8F1E142720601A43004BEBF2 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		8F1E142820601A43004BEBF2 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpng16.16.dylib; sourceTree = "<group>"; };
+		8F1E142920601A43004BEBF2 /* libpng.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpng.dylib; sourceTree = "<group>"; };
+		8F1E142A20601A43004BEBF2 /* libpng16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpng16.dylib; sourceTree = "<group>"; };
+		8F1E142E20601A43004BEBF2 /* png.5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = png.5; sourceTree = "<group>"; };
+		8F1E143020601A43004BEBF2 /* libpng.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpng.3; sourceTree = "<group>"; };
+		8F1E143120601A43004BEBF2 /* libpngpf.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpngpf.3; sourceTree = "<group>"; };
 		8FED54062057DD780003C1E7 /* GestionPersonnel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GestionPersonnel; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FED54092057DD780003C1E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		8FED54102057DD950003C1E7 /* library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = library.h; sourceTree = "<group>"; };
 		8FED54112057DD950003C1E7 /* library.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = library.c; sourceTree = "<group>"; };
-		8FED542220593EB30003C1E7 /* qrcodegen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrcodegen.c; sourceTree = "<group>"; };
-		8FED542320593EB30003C1E7 /* qrcodegen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrcodegen.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,12 +72,158 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1E143620601A43004BEBF2 /* libpng16.dylib in Frameworks */,
+				8F1E143420601A43004BEBF2 /* libpng16.16.dylib in Frameworks */,
+				8F1E143220601A43004BEBF2 /* libpng16.a in Frameworks */,
+				8F1E143520601A43004BEBF2 /* libpng.dylib in Frameworks */,
+				8F1E143320601A43004BEBF2 /* libpng.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F1E1409206019D1004BEBF2 /* Png */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E1403206019CD004BEBF2 /* PNGUtils.c */,
+				8F1E1405206019CE004BEBF2 /* PNGUtils.h */,
+			);
+			path = Png;
+			sourceTree = "<group>";
+		};
+		8F1E140A206019DF004BEBF2 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E1406206019CE004BEBF2 /* qrcodegen.c */,
+				8F1E1404206019CE004BEBF2 /* qrcodegen.h */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		8F1E140C20601A26004BEBF2 /* libpng */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E140D20601A43004BEBF2 /* 1.6.34 */,
+			);
+			name = libpng;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8F1E140D20601A43004BEBF2 /* 1.6.34 */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E140E20601A43004BEBF2 /* INSTALL_RECEIPT.json */,
+				8F1E140F20601A43004BEBF2 /* LICENSE */,
+				8F1E141020601A43004BEBF2 /* bin */,
+				8F1E141520601A43004BEBF2 /* .brew */,
+				8F1E141720601A43004BEBF2 /* CHANGES */,
+				8F1E141820601A43004BEBF2 /* include */,
+				8F1E142020601A43004BEBF2 /* README */,
+				8F1E142120601A43004BEBF2 /* TODO */,
+				8F1E142220601A43004BEBF2 /* lib */,
+				8F1E142B20601A43004BEBF2 /* share */,
+			);
+			name = 1.6.34;
+			path = GestionPersonnel/libpng/1.6.34;
+			sourceTree = SOURCE_ROOT;
+		};
+		8F1E141020601A43004BEBF2 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E141120601A43004BEBF2 /* png-fix-itxt */,
+				8F1E141220601A43004BEBF2 /* libpng16-config */,
+				8F1E141320601A43004BEBF2 /* pngfix */,
+				8F1E141420601A43004BEBF2 /* libpng-config */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		8F1E141520601A43004BEBF2 /* .brew */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E141620601A43004BEBF2 /* libpng.rb */,
+			);
+			path = .brew;
+			sourceTree = "<group>";
+		};
+		8F1E141820601A43004BEBF2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E141920601A43004BEBF2 /* libpng16 */,
+				8F1E141D20601A43004BEBF2 /* png.h */,
+				8F1E141E20601A43004BEBF2 /* pnglibconf.h */,
+				8F1E141F20601A43004BEBF2 /* pngconf.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8F1E141920601A43004BEBF2 /* libpng16 */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E141A20601A43004BEBF2 /* png.h */,
+				8F1E141B20601A43004BEBF2 /* pnglibconf.h */,
+				8F1E141C20601A43004BEBF2 /* pngconf.h */,
+			);
+			path = libpng16;
+			sourceTree = "<group>";
+		};
+		8F1E142220601A43004BEBF2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E142320601A43004BEBF2 /* pkgconfig */,
+				8F1E142620601A43004BEBF2 /* libpng16.a */,
+				8F1E142720601A43004BEBF2 /* libpng.a */,
+				8F1E142820601A43004BEBF2 /* libpng16.16.dylib */,
+				8F1E142920601A43004BEBF2 /* libpng.dylib */,
+				8F1E142A20601A43004BEBF2 /* libpng16.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		8F1E142320601A43004BEBF2 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E142420601A43004BEBF2 /* libpng16.pc */,
+				8F1E142520601A43004BEBF2 /* libpng.pc */,
+			);
+			path = pkgconfig;
+			sourceTree = "<group>";
+		};
+		8F1E142B20601A43004BEBF2 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E142C20601A43004BEBF2 /* man */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		8F1E142C20601A43004BEBF2 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E142D20601A43004BEBF2 /* man5 */,
+				8F1E142F20601A43004BEBF2 /* man3 */,
+			);
+			path = man;
+			sourceTree = "<group>";
+		};
+		8F1E142D20601A43004BEBF2 /* man5 */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E142E20601A43004BEBF2 /* png.5 */,
+			);
+			path = man5;
+			sourceTree = "<group>";
+		};
+		8F1E142F20601A43004BEBF2 /* man3 */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E143020601A43004BEBF2 /* libpng.3 */,
+				8F1E143120601A43004BEBF2 /* libpngpf.3 */,
+			);
+			path = man3;
+			sourceTree = "<group>";
+		};
 		8FED53FD2057DD780003C1E7 = {
 			isa = PBXGroup;
 			children = (
@@ -63,21 +243,14 @@
 		8FED54082057DD780003C1E7 /* GestionPersonnel */ = {
 			isa = PBXGroup;
 			children = (
-				8FED541E20593E740003C1E7 /* qrcode */,
+				8F1E140C20601A26004BEBF2 /* libpng */,
+				8F1E140A206019DF004BEBF2 /* QRCode */,
+				8F1E1409206019D1004BEBF2 /* Png */,
 				8FED54092057DD780003C1E7 /* main.c */,
 				8FED54102057DD950003C1E7 /* library.h */,
 				8FED54112057DD950003C1E7 /* library.c */,
 			);
 			path = GestionPersonnel;
-			sourceTree = "<group>";
-		};
-		8FED541E20593E740003C1E7 /* qrcode */ = {
-			isa = PBXGroup;
-			children = (
-				8FED542220593EB30003C1E7 /* qrcodegen.c */,
-				8FED542320593EB30003C1E7 /* qrcodegen.h */,
-			);
-			path = qrcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FED542420593EB30003C1E7 /* qrcodegen.c in Sources */,
+				8F1E1408206019CE004BEBF2 /* qrcodegen.c in Sources */,
 				8FED540A2057DD780003C1E7 /* main.c in Sources */,
 				8FED54122057DD950003C1E7 /* library.c in Sources */,
+				8F1E1407206019CE004BEBF2 /* PNGUtils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +427,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GestionPersonnel/libpng/1.6.34/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -261,6 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GestionPersonnel/libpng/1.6.34/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

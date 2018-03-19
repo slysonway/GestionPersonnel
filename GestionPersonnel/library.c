@@ -10,7 +10,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-#include "qrcode/qrcodegen.h"
+#include "PNGUtils.h"
 
 char * getString() {
     char * ch = malloc(200);
@@ -76,7 +76,7 @@ char * xmlName(Informations information) {
     strcat(dst, tmp);
     sprintf(tmp, "%d", information.Date.Year);
     strcat(dst, tmp);
-    strcat(dst, ".xml");
+    //strcat(dst, ".xml");
     
     free(tmp);
     return  dst;
@@ -87,42 +87,19 @@ char * xmlName(Informations information) {
 
 // Creates a single QR Code, then prints it to the console.
 void generateQR(char * info) {
-    const char *text = info;  // User-supplied text
-    enum qrcodegen_Ecc errCorLvl = qrcodegen_Ecc_LOW;  // Error correction level
+    // The structure to manage the QR code
+    QRCode qrcode;
     
-    // Make and print the QR Code symbol
-    uint8_t qrcode[qrcodegen_BUFFER_LEN_MAX];
-    uint8_t tempBuffer[qrcodegen_BUFFER_LEN_MAX];
-    bool ok = qrcodegen_encodeText(text, tempBuffer, qrcode, errCorLvl,
-                                   qrcodegen_VERSION_MIN, qrcodegen_VERSION_MAX, qrcodegen_Mask_AUTO, true);
-    if (ok)
-        printQr(qrcode);
-}
-
-/*---- Utilities ----*/
-//Will change by generate a bitmap image
-// Prints the given QR Code to the console.
-void printQr(const uint8_t qrcode[]) {
-    FILE *pf;
-    pf = fopen("file", "w" );
-    int size = qrcodegen_getSize(qrcode);
-    int border = 4;
-    char test[2] = {'1', '1'};
+    // Allocate a chunk of memory to store the QR code
+    uint8_t qrcodeBytes[qrcode_getBufferSize(1)];
     
-    for (int y = 0; y < 25; y++) {
-        for (int x = 0; x < 25; x++) {
-            //fputs((qrcodegen_getModule(qrcode, x, y) ? "##" : "  "), stdout);
-            fputs((qrcodegen_getModule(qrcode, x, y) ? "##" : "  "), stdout);
-            fwrite((qrcodegen_getModule(qrcode, x, y) ? "##" : "  "), 1, 2, pf);
-        }
-        fputs("\n", stdout);
-        fwrite("\n", 1, 1, pf);
+    qrcode_initText(&qrcode, qrcodeBytes, 2, ECC_LOW, info);
+    int **buffer;
+    buffer = (int**)malloc(sizeof(int *) * 250);
+    for (int i = 0; i < 250; i++) {
+        *(buffer + i) = (int *)malloc(sizeof(int) * 250);
     }
-    
-    fputs("\n", stdout);
-    fwrite("\n", 1, 1, pf);
-    fclose(pf);
+    resizeBitMap(qrcode, 250, buffer);
+    generatePNG(buffer, info);
 }
-
-
 

@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 int main(int argc, const char * argv[]) {
@@ -50,7 +51,7 @@ int main(int argc, const char * argv[]) {
     getTime(&people.Date);
     
     generateQR(xmlName(people));
-    createXml(people, xmlName(people));
+    createXml(people, strcat(xmlName(people), ".xml"));
     free(ch);
     
     
