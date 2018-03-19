@@ -6,10 +6,54 @@
 //  Copyright © 2018 Pierre Kettmus. All rights reserved.
 //
 
+#include "library.h"
+
 #include <stdio.h>
+#include <stdlib.h>
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    
+    //int FakeId = 0;
+    Informations people;
+    char * ch = malloc(200);
+    int choice = 0;
+    
+    printf("id: ");
+    scanf("%d", &people.id);
+    
+    printf("Nom: ");
+    people.Name = getString();
+    
+    ch[0] = '\0';
+    printf("Prénom: ");
+    people.FirstName = getString();
+    
+    printf("Choisissez un restaurant: ");
+    scanf("%d", &choice);
+    switch (choice) {
+        case 1:
+            people.Restaurant = "bastille";
+            break;
+        
+        case 2:
+            people.Restaurant = "republique";
+            break;
+            
+        default:
+            break;
+    }
+
+    printf("Age: ");
+    scanf("%d", &people.Age);
+    
+    getTime(&people.Date);
+    
+    generateQR(xmlName(people));
+    createXml(people, xmlName(people));
+    free(ch);
+    
+    
     return 0;
 }
+

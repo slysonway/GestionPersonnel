@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8FED540A2057DD780003C1E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FED54092057DD780003C1E7 /* main.c */; };
+		8FED54122057DD950003C1E7 /* library.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FED54112057DD950003C1E7 /* library.c */; };
+		8FED542420593EB30003C1E7 /* qrcodegen.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FED542220593EB30003C1E7 /* qrcodegen.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		8FED54062057DD780003C1E7 /* GestionPersonnel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GestionPersonnel; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FED54092057DD780003C1E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8FED54102057DD950003C1E7 /* library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = library.h; sourceTree = "<group>"; };
+		8FED54112057DD950003C1E7 /* library.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = library.c; sourceTree = "<group>"; };
+		8FED542220593EB30003C1E7 /* qrcodegen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrcodegen.c; sourceTree = "<group>"; };
+		8FED542320593EB30003C1E7 /* qrcodegen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrcodegen.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,21 @@
 		8FED54082057DD780003C1E7 /* GestionPersonnel */ = {
 			isa = PBXGroup;
 			children = (
+				8FED541E20593E740003C1E7 /* qrcode */,
 				8FED54092057DD780003C1E7 /* main.c */,
+				8FED54102057DD950003C1E7 /* library.h */,
+				8FED54112057DD950003C1E7 /* library.c */,
 			);
 			path = GestionPersonnel;
+			sourceTree = "<group>";
+		};
+		8FED541E20593E740003C1E7 /* qrcode */ = {
+			isa = PBXGroup;
+			children = (
+				8FED542220593EB30003C1E7 /* qrcodegen.c */,
+				8FED542320593EB30003C1E7 /* qrcodegen.h */,
+			);
+			path = qrcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FED542420593EB30003C1E7 /* qrcodegen.c in Sources */,
 				8FED540A2057DD780003C1E7 /* main.c in Sources */,
+				8FED54122057DD950003C1E7 /* library.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
