@@ -19,7 +19,7 @@ static pixel_t * pixel_at (bitmap_t * bitmap, int x, int y)
 /* Write "bitmap" to a PNG file specified by "path"; returns 0 on
  success, non-zero on error. */
 
-static int save_png_to_file (bitmap_t *bitmap, const char *path)
+static int save_png_to_file(bitmap_t *bitmap, const char *path)
 {
     FILE * fp;
     png_structp png_ptr = NULL;
@@ -146,7 +146,7 @@ int generatePNG(int **qrcode, char * filename)
     
     /* Write the image to a file 'fruit.png'. */
     
-    save_png_to_file (& fruit, strcat(filename, ".png"));
+    save_png_to_file(& fruit, strcat(filename, ".png"));
     
     free (fruit.pixels);
     
@@ -171,8 +171,6 @@ void resizeBitMap(QRCode qrcode, int nSize, int *buffer[]) {
             }
         }
     }
-    
-    printf("End");
 }
 
 

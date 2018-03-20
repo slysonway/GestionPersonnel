@@ -16,6 +16,18 @@
 		8F1E143620601A43004BEBF2 /* libpng16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E142A20601A43004BEBF2 /* libpng16.dylib */; };
 		8FED540A2057DD780003C1E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FED54092057DD780003C1E7 /* main.c */; };
 		8FED54122057DD950003C1E7 /* library.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FED54112057DD950003C1E7 /* library.c */; };
+		8FEE30BE20615202004BCEF3 /* plugin_auth.h.pp in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE2FA620615202004BCEF3 /* plugin_auth.h.pp */; };
+		8FEE30BF20615202004BCEF3 /* services.h.pp in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE2FAD20615202004BCEF3 /* services.h.pp */; };
+		8FEE30C020615202004BCEF3 /* plugin_audit.h.pp in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE2FB920615202004BCEF3 /* plugin_audit.h.pp */; };
+		8FEE30C120615202004BCEF3 /* plugin_ftparser.h.pp in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE2FBA20615202004BCEF3 /* plugin_ftparser.h.pp */; };
+		8FEE30C220615202004BCEF3 /* client_plugin.h.pp in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE2FBE20615202004BCEF3 /* client_plugin.h.pp */; };
+		8FEE30C320615202004BCEF3 /* plugin_keyring.h.pp in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE2FDE20615202004BCEF3 /* plugin_keyring.h.pp */; };
+		8FEE30C420615202004BCEF3 /* libmysqlclient.20.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEE2FF920615202004BCEF3 /* libmysqlclient.20.dylib */; };
+		8FEE30C520615202004BCEF3 /* libmysqld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEE2FFA20615202004BCEF3 /* libmysqld.a */; };
+		8FEE30C620615202004BCEF3 /* libmysqlclient.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEE302C20615202004BCEF3 /* libmysqlclient.dylib */; };
+		8FEE30C720615202004BCEF3 /* libmysqlservices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEE302D20615202004BCEF3 /* libmysqlservices.a */; };
+		8FEE30C820615202004BCEF3 /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEE302E20615202004BCEF3 /* libmysqlclient.a */; };
+		8FEE30CB2061523F004BCEF3 /* database.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE30CA2061523F004BCEF3 /* database.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +77,331 @@
 		8FED54092057DD780003C1E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		8FED54102057DD950003C1E7 /* library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = library.h; sourceTree = "<group>"; };
 		8FED54112057DD950003C1E7 /* library.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = library.c; sourceTree = "<group>"; };
+		8FEE2F4E20615202004BCEF3 /* COPYING-test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "COPYING-test"; sourceTree = "<group>"; };
+		8FEE2F4F20615202004BCEF3 /* homebrew.mxcl.mysql.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homebrew.mxcl.mysql.plist; sourceTree = "<group>"; };
+		8FEE2F5020615202004BCEF3 /* INSTALL_RECEIPT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = INSTALL_RECEIPT.json; sourceTree = "<group>"; };
+		8FEE2F5220615202004BCEF3 /* mysqlbinlog */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqlbinlog; sourceTree = "<group>"; };
+		8FEE2F5320615202004BCEF3 /* mysql_config_editor */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_config_editor; sourceTree = "<group>"; };
+		8FEE2F5420615202004BCEF3 /* mysql_plugin */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_plugin; sourceTree = "<group>"; };
+		8FEE2F5520615202004BCEF3 /* mysql_tzinfo_to_sql */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_tzinfo_to_sql; sourceTree = "<group>"; };
+		8FEE2F5620615202004BCEF3 /* resolveip */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = resolveip; sourceTree = "<group>"; };
+		8FEE2F5720615202004BCEF3 /* mysql_install_db */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_install_db; sourceTree = "<group>"; };
+		8FEE2F5820615202004BCEF3 /* my_print_defaults */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = my_print_defaults; sourceTree = "<group>"; };
+		8FEE2F5920615202004BCEF3 /* resolve_stack_dump */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = resolve_stack_dump; sourceTree = "<group>"; };
+		8FEE2F5A20615202004BCEF3 /* mysqldumpslow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = mysqldumpslow; sourceTree = "<group>"; };
+		8FEE2F5B20615202004BCEF3 /* mysqld */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqld; sourceTree = "<group>"; };
+		8FEE2F5C20615202004BCEF3 /* mysqltest_embedded */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqltest_embedded; sourceTree = "<group>"; };
+		8FEE2F5D20615202004BCEF3 /* mysql_config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mysql_config; sourceTree = "<group>"; };
+		8FEE2F5E20615202004BCEF3 /* mysqld_multi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = mysqld_multi; sourceTree = "<group>"; };
+		8FEE2F5F20615202004BCEF3 /* mysqlcheck */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqlcheck; sourceTree = "<group>"; };
+		8FEE2F6020615202004BCEF3 /* mysqlimport */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqlimport; sourceTree = "<group>"; };
+		8FEE2F6120615202004BCEF3 /* mysqlpump */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqlpump; sourceTree = "<group>"; };
+		8FEE2F6220615202004BCEF3 /* perror */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = perror; sourceTree = "<group>"; };
+		8FEE2F6320615202004BCEF3 /* lz4_decompress */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = lz4_decompress; sourceTree = "<group>"; };
+		8FEE2F6420615202004BCEF3 /* zlib_decompress */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = zlib_decompress; sourceTree = "<group>"; };
+		8FEE2F6520615202004BCEF3 /* mysql_client_test */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_client_test; sourceTree = "<group>"; };
+		8FEE2F6620615202004BCEF3 /* mysqlshow */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqlshow; sourceTree = "<group>"; };
+		8FEE2F6720615202004BCEF3 /* myisamchk */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = myisamchk; sourceTree = "<group>"; };
+		8FEE2F6820615202004BCEF3 /* mysql_secure_installation */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_secure_installation; sourceTree = "<group>"; };
+		8FEE2F6920615202004BCEF3 /* mysql_ssl_rsa_setup */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_ssl_rsa_setup; sourceTree = "<group>"; };
+		8FEE2F6A20615202004BCEF3 /* mysql */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql; sourceTree = "<group>"; };
+		8FEE2F6B20615202004BCEF3 /* myisampack */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = myisampack; sourceTree = "<group>"; };
+		8FEE2F6C20615202004BCEF3 /* mysql_embedded */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_embedded; sourceTree = "<group>"; };
+		8FEE2F6D20615202004BCEF3 /* mysql_client_test_embedded */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_client_test_embedded; sourceTree = "<group>"; };
+		8FEE2F6E20615202004BCEF3 /* myisamlog */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = myisamlog; sourceTree = "<group>"; };
+		8FEE2F6F20615202004BCEF3 /* replace */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = replace; sourceTree = "<group>"; };
+		8FEE2F7020615202004BCEF3 /* myisam_ftdump */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = myisam_ftdump; sourceTree = "<group>"; };
+		8FEE2F7120615202004BCEF3 /* innochecksum */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = innochecksum; sourceTree = "<group>"; };
+		8FEE2F7220615202004BCEF3 /* mysqladmin */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqladmin; sourceTree = "<group>"; };
+		8FEE2F7320615202004BCEF3 /* mysqldump */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqldump; sourceTree = "<group>"; };
+		8FEE2F7420615202004BCEF3 /* mysql.server */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mysql.server; sourceTree = "<group>"; };
+		8FEE2F7520615202004BCEF3 /* mysqlxtest */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqlxtest; sourceTree = "<group>"; };
+		8FEE2F7620615202004BCEF3 /* mysql_upgrade */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysql_upgrade; sourceTree = "<group>"; };
+		8FEE2F7720615202004BCEF3 /* mysqltest */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqltest; sourceTree = "<group>"; };
+		8FEE2F7820615202004BCEF3 /* mysqld_safe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mysqld_safe; sourceTree = "<group>"; };
+		8FEE2F7920615202004BCEF3 /* mysqlslap */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mysqlslap; sourceTree = "<group>"; };
+		8FEE2F7A20615202004BCEF3 /* README-test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README-test"; sourceTree = "<group>"; };
+		8FEE2F7C20615202004BCEF3 /* mysql.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = mysql.rb; sourceTree = "<group>"; };
+		8FEE2F7E20615202004BCEF3 /* magic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic; sourceTree = "<group>"; };
+		8FEE2F7F20615202004BCEF3 /* mysqld_multi.server */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mysqld_multi.server; sourceTree = "<group>"; };
+		8FEE2F8020615202004BCEF3 /* mysql-log-rotate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mysql-log-rotate"; sourceTree = "<group>"; };
+		8FEE2F8120615202004BCEF3 /* mysql.server */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mysql.server; sourceTree = "<group>"; };
+		8FEE2F8420615202004BCEF3 /* mysql_com_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_com_server.h; sourceTree = "<group>"; };
+		8FEE2F8520615202004BCEF3 /* byte_order_generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byte_order_generic.h; sourceTree = "<group>"; };
+		8FEE2F8620615202004BCEF3 /* my_command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_command.h; sourceTree = "<group>"; };
+		8FEE2F8720615202004BCEF3 /* thr_rwlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_rwlock.h; sourceTree = "<group>"; };
+		8FEE2F8820615202004BCEF3 /* my_byteorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_byteorder.h; sourceTree = "<group>"; };
+		8FEE2F8920615202004BCEF3 /* my_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_config.h; sourceTree = "<group>"; };
+		8FEE2F8A20615202004BCEF3 /* my_thread_local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_thread_local.h; sourceTree = "<group>"; };
+		8FEE2F8B20615202004BCEF3 /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
+		8FEE2F8C20615202004BCEF3 /* keycache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keycache.h; sourceTree = "<group>"; };
+		8FEE2F8D20615202004BCEF3 /* plugin_group_replication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_group_replication.h; sourceTree = "<group>"; };
+		8FEE2F8E20615202004BCEF3 /* binary_log_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binary_log_types.h; sourceTree = "<group>"; };
+		8FEE2F8F20615202004BCEF3 /* mysqld_ername.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysqld_ername.h; sourceTree = "<group>"; };
+		8FEE2F9020615202004BCEF3 /* m_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_ctype.h; sourceTree = "<group>"; };
+		8FEE2F9120615202004BCEF3 /* big_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = big_endian.h; sourceTree = "<group>"; };
+		8FEE2F9220615202004BCEF3 /* my_global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_global.h; sourceTree = "<group>"; };
+		8FEE2F9320615202004BCEF3 /* plugin_ftparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_ftparser.h; sourceTree = "<group>"; };
+		8FEE2F9420615202004BCEF3 /* little_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = little_endian.h; sourceTree = "<group>"; };
+		8FEE2F9520615202004BCEF3 /* thr_cond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_cond.h; sourceTree = "<group>"; };
+		8FEE2F9620615202004BCEF3 /* mysql_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_version.h; sourceTree = "<group>"; };
+		8FEE2F9720615202004BCEF3 /* sslopt-vars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-vars.h"; sourceTree = "<group>"; };
+		8FEE2F9820615202004BCEF3 /* my_getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_getopt.h; sourceTree = "<group>"; };
+		8FEE2F9920615202004BCEF3 /* decimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decimal.h; sourceTree = "<group>"; };
+		8FEE2F9A20615202004BCEF3 /* sslopt-case.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-case.h"; sourceTree = "<group>"; };
+		8FEE2F9B20615202004BCEF3 /* m_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_string.h; sourceTree = "<group>"; };
+		8FEE2F9C20615202004BCEF3 /* plugin_keyring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_keyring.h; sourceTree = "<group>"; };
+		8FEE2F9D20615202004BCEF3 /* mysql_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_time.h; sourceTree = "<group>"; };
+		8FEE2F9E20615202004BCEF3 /* my_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_thread.h; sourceTree = "<group>"; };
+		8FEE2F9F20615202004BCEF3 /* my_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_list.h; sourceTree = "<group>"; };
+		8FEE2FA020615202004BCEF3 /* mysqlx_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysqlx_version.h; sourceTree = "<group>"; };
+		8FEE2FA120615202004BCEF3 /* sslopt-longopts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-longopts.h"; sourceTree = "<group>"; };
+		8FEE2FA220615202004BCEF3 /* typelib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typelib.h; sourceTree = "<group>"; };
+		8FEE2FA320615202004BCEF3 /* mysql_com.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_com.h; sourceTree = "<group>"; };
+		8FEE2FA520615202004BCEF3 /* service_mysql_keyring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_mysql_keyring.h; sourceTree = "<group>"; };
+		8FEE2FA620615202004BCEF3 /* plugin_auth.h.pp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = plugin_auth.h.pp; sourceTree = "<group>"; };
+		8FEE2FA720615202004BCEF3 /* com_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = com_data.h; sourceTree = "<group>"; };
+		8FEE2FA820615202004BCEF3 /* mysql_lex_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_lex_string.h; sourceTree = "<group>"; };
+		8FEE2FA920615202004BCEF3 /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
+		8FEE2FAA20615202004BCEF3 /* service_rpl_transaction_write_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_rpl_transaction_write_set.h; sourceTree = "<group>"; };
+		8FEE2FAB20615202004BCEF3 /* service_mysql_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_mysql_alloc.h; sourceTree = "<group>"; };
+		8FEE2FAC20615202004BCEF3 /* plugin_group_replication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_group_replication.h; sourceTree = "<group>"; };
+		8FEE2FAD20615202004BCEF3 /* services.h.pp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = services.h.pp; sourceTree = "<group>"; };
+		8FEE2FAE20615202004BCEF3 /* service_ssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_ssl_wrapper.h; sourceTree = "<group>"; };
+		8FEE2FAF20615202004BCEF3 /* service_thd_wait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_thd_wait.h; sourceTree = "<group>"; };
+		8FEE2FB020615202004BCEF3 /* plugin_auth_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_auth_common.h; sourceTree = "<group>"; };
+		8FEE2FB120615202004BCEF3 /* plugin_ftparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_ftparser.h; sourceTree = "<group>"; };
+		8FEE2FB220615202004BCEF3 /* plugin_trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_trace.h; sourceTree = "<group>"; };
+		8FEE2FB320615202004BCEF3 /* plugin_auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_auth.h; sourceTree = "<group>"; };
+		8FEE2FB420615202004BCEF3 /* thread_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_type.h; sourceTree = "<group>"; };
+		8FEE2FB520615202004BCEF3 /* services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = services.h; sourceTree = "<group>"; };
+		8FEE2FB620615202004BCEF3 /* get_password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = get_password.h; sourceTree = "<group>"; };
+		8FEE2FB720615202004BCEF3 /* service_command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_command.h; sourceTree = "<group>"; };
+		8FEE2FB820615202004BCEF3 /* plugin_keyring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_keyring.h; sourceTree = "<group>"; };
+		8FEE2FB920615202004BCEF3 /* plugin_audit.h.pp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = plugin_audit.h.pp; sourceTree = "<group>"; };
+		8FEE2FBA20615202004BCEF3 /* plugin_ftparser.h.pp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = plugin_ftparser.h.pp; sourceTree = "<group>"; };
+		8FEE2FBB20615202004BCEF3 /* service_my_snprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_my_snprintf.h; sourceTree = "<group>"; };
+		8FEE2FBC20615202004BCEF3 /* service_rpl_transaction_ctx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_rpl_transaction_ctx.h; sourceTree = "<group>"; };
+		8FEE2FBD20615202004BCEF3 /* thread_pool_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_pool_priv.h; sourceTree = "<group>"; };
+		8FEE2FBE20615202004BCEF3 /* client_plugin.h.pp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = client_plugin.h.pp; sourceTree = "<group>"; };
+		8FEE2FBF20615202004BCEF3 /* client_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client_plugin.h; sourceTree = "<group>"; };
+		8FEE2FC020615202004BCEF3 /* service_my_plugin_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_my_plugin_log.h; sourceTree = "<group>"; };
+		8FEE2FC120615202004BCEF3 /* service_rules_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_rules_table.h; sourceTree = "<group>"; };
+		8FEE2FC220615202004BCEF3 /* plugin_validate_password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_validate_password.h; sourceTree = "<group>"; };
+		8FEE2FC320615202004BCEF3 /* plugin_audit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_audit.h; sourceTree = "<group>"; };
+		8FEE2FC420615202004BCEF3 /* service_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_parser.h; sourceTree = "<group>"; };
+		8FEE2FC520615202004BCEF3 /* service_srv_session_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_srv_session_info.h; sourceTree = "<group>"; };
+		8FEE2FC620615202004BCEF3 /* service_thread_scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_thread_scheduler.h; sourceTree = "<group>"; };
+		8FEE2FC820615202004BCEF3 /* mysql_ps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_ps.h; sourceTree = "<group>"; };
+		8FEE2FC920615202004BCEF3 /* mysql_transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_transaction.h; sourceTree = "<group>"; };
+		8FEE2FCA20615202004BCEF3 /* mysql_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_file.h; sourceTree = "<group>"; };
+		8FEE2FCB20615202004BCEF3 /* mysql_idle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_idle.h; sourceTree = "<group>"; };
+		8FEE2FCC20615202004BCEF3 /* psi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psi.h; sourceTree = "<group>"; };
+		8FEE2FCD20615202004BCEF3 /* mysql_stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_stage.h; sourceTree = "<group>"; };
+		8FEE2FCE20615202004BCEF3 /* mysql_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_table.h; sourceTree = "<group>"; };
+		8FEE2FCF20615202004BCEF3 /* psi_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psi_memory.h; sourceTree = "<group>"; };
+		8FEE2FD020615202004BCEF3 /* psi_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psi_base.h; sourceTree = "<group>"; };
+		8FEE2FD120615202004BCEF3 /* mysql_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_socket.h; sourceTree = "<group>"; };
+		8FEE2FD220615202004BCEF3 /* mysql_sp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_sp.h; sourceTree = "<group>"; };
+		8FEE2FD320615202004BCEF3 /* mysql_statement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_statement.h; sourceTree = "<group>"; };
+		8FEE2FD420615202004BCEF3 /* mysql_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_thread.h; sourceTree = "<group>"; };
+		8FEE2FD520615202004BCEF3 /* mysql_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_memory.h; sourceTree = "<group>"; };
+		8FEE2FD620615202004BCEF3 /* mysql_mdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_mdl.h; sourceTree = "<group>"; };
+		8FEE2FD720615202004BCEF3 /* service_mysql_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_mysql_string.h; sourceTree = "<group>"; };
+		8FEE2FD820615202004BCEF3 /* innodb_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = innodb_priv.h; sourceTree = "<group>"; };
+		8FEE2FD920615202004BCEF3 /* service_security_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_security_context.h; sourceTree = "<group>"; };
+		8FEE2FDA20615202004BCEF3 /* group_replication_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_replication_priv.h; sourceTree = "<group>"; };
+		8FEE2FDB20615202004BCEF3 /* client_authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client_authentication.h; sourceTree = "<group>"; };
+		8FEE2FDC20615202004BCEF3 /* service_mysql_password_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_mysql_password_policy.h; sourceTree = "<group>"; };
+		8FEE2FDD20615202004BCEF3 /* service_srv_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_srv_session.h; sourceTree = "<group>"; };
+		8FEE2FDE20615202004BCEF3 /* plugin_keyring.h.pp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = plugin_keyring.h.pp; sourceTree = "<group>"; };
+		8FEE2FDF20615202004BCEF3 /* service_thd_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_thd_alloc.h; sourceTree = "<group>"; };
+		8FEE2FE020615202004BCEF3 /* service_thd_engine_lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_thd_engine_lock.h; sourceTree = "<group>"; };
+		8FEE2FE120615202004BCEF3 /* service_locking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_locking.h; sourceTree = "<group>"; };
+		8FEE2FE220615202004BCEF3 /* plugin_validate_password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_validate_password.h; sourceTree = "<group>"; };
+		8FEE2FE320615202004BCEF3 /* my_dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_dir.h; sourceTree = "<group>"; };
+		8FEE2FE420615202004BCEF3 /* thr_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_mutex.h; sourceTree = "<group>"; };
+		8FEE2FE520615202004BCEF3 /* plugin_audit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_audit.h; sourceTree = "<group>"; };
+		8FEE2FE620615202004BCEF3 /* mysql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql.h; sourceTree = "<group>"; };
+		8FEE2FE720615202004BCEF3 /* mysqlx_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysqlx_error.h; sourceTree = "<group>"; };
+		8FEE2FE820615202004BCEF3 /* mysqlx_ername.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysqlx_ername.h; sourceTree = "<group>"; };
+		8FEE2FE920615202004BCEF3 /* my_xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_xml.h; sourceTree = "<group>"; };
+		8FEE2FEA20615202004BCEF3 /* sql_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sql_common.h; sourceTree = "<group>"; };
+		8FEE2FEB20615202004BCEF3 /* my_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_alloc.h; sourceTree = "<group>"; };
+		8FEE2FEC20615202004BCEF3 /* byte_order_generic_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byte_order_generic_x86.h; sourceTree = "<group>"; };
+		8FEE2FED20615202004BCEF3 /* mysqld_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysqld_error.h; sourceTree = "<group>"; };
+		8FEE2FEE20615202004BCEF3 /* my_compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_compiler.h; sourceTree = "<group>"; };
+		8FEE2FEF20615202004BCEF3 /* my_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_sys.h; sourceTree = "<group>"; };
+		8FEE2FF020615202004BCEF3 /* sql_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sql_state.h; sourceTree = "<group>"; };
+		8FEE2FF120615202004BCEF3 /* my_dbug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_dbug.h; sourceTree = "<group>"; };
+		8FEE2FF220615202004BCEF3 /* errmsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errmsg.h; sourceTree = "<group>"; };
+		8FEE2FF320615202004BCEF3 /* mysql_embed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_embed.h; sourceTree = "<group>"; };
+		8FEE2FF420615202004BCEF3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		8FEE2FF520615202004BCEF3 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		8FEE2FF820615202004BCEF3 /* mysqlclient.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mysqlclient.pc; sourceTree = "<group>"; };
+		8FEE2FF920615202004BCEF3 /* libmysqlclient.20.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmysqlclient.20.dylib; sourceTree = "<group>"; };
+		8FEE2FFA20615202004BCEF3 /* libmysqld.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqld.a; sourceTree = "<group>"; };
+		8FEE2FFC20615202004BCEF3 /* keyring_file.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = keyring_file.so; sourceTree = "<group>"; };
+		8FEE2FFD20615202004BCEF3 /* libtest_x_sessions_init.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_x_sessions_init.so; sourceTree = "<group>"; };
+		8FEE2FFE20615202004BCEF3 /* qa_auth_interface.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = qa_auth_interface.so; sourceTree = "<group>"; };
+		8FEE2FFF20615202004BCEF3 /* libtest_sql_stored_procedures_functions.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_stored_procedures_functions.so; sourceTree = "<group>"; };
+		8FEE300020615202004BCEF3 /* mysqlx.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mysqlx.so; sourceTree = "<group>"; };
+		8FEE300120615202004BCEF3 /* version_token.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = version_token.so; sourceTree = "<group>"; };
+		8FEE300220615202004BCEF3 /* ha_example.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = ha_example.so; sourceTree = "<group>"; };
+		8FEE300320615202004BCEF3 /* libtest_services.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_services.so; sourceTree = "<group>"; };
+		8FEE300420615202004BCEF3 /* qa_auth_client.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = qa_auth_client.so; sourceTree = "<group>"; };
+		8FEE300520615202004BCEF3 /* rewrite_example.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = rewrite_example.so; sourceTree = "<group>"; };
+		8FEE300620615202004BCEF3 /* libtest_sql_all_col_types.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_all_col_types.so; sourceTree = "<group>"; };
+		8FEE300720615202004BCEF3 /* libtest_x_sessions_deinit.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_x_sessions_deinit.so; sourceTree = "<group>"; };
+		8FEE300820615202004BCEF3 /* locking_service.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = locking_service.so; sourceTree = "<group>"; };
+		8FEE300920615202004BCEF3 /* libtest_sql_2_sessions.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_2_sessions.so; sourceTree = "<group>"; };
+		8FEE300A20615202004BCEF3 /* group_replication.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = group_replication.so; sourceTree = "<group>"; };
+		8FEE300B20615202004BCEF3 /* test_security_context.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = test_security_context.so; sourceTree = "<group>"; };
+		8FEE300C20615202004BCEF3 /* libtest_sql_sqlmode.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_sqlmode.so; sourceTree = "<group>"; };
+		8FEE300D20615202004BCEF3 /* libtest_sql_commit.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_commit.so; sourceTree = "<group>"; };
+		8FEE300E20615202004BCEF3 /* test_udf_services.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = test_udf_services.so; sourceTree = "<group>"; };
+		8FEE300F20615202004BCEF3 /* keyring_udf.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = keyring_udf.so; sourceTree = "<group>"; };
+		8FEE301020615202004BCEF3 /* daemon_example.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = daemon_example.ini; sourceTree = "<group>"; };
+		8FEE301120615202004BCEF3 /* libtest_framework.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_framework.so; sourceTree = "<group>"; };
+		8FEE301220615202004BCEF3 /* libtest_session_info.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_session_info.so; sourceTree = "<group>"; };
+		8FEE301320615202004BCEF3 /* authentication_ldap_sasl_client.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = authentication_ldap_sasl_client.so; sourceTree = "<group>"; };
+		8FEE301420615202004BCEF3 /* libtest_session_detach.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_session_detach.so; sourceTree = "<group>"; };
+		8FEE301520615202004BCEF3 /* libtest_sql_replication.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_replication.so; sourceTree = "<group>"; };
+		8FEE301620615202004BCEF3 /* adt_null.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = adt_null.so; sourceTree = "<group>"; };
+		8FEE301720615202004BCEF3 /* qa_auth_server.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = qa_auth_server.so; sourceTree = "<group>"; };
+		8FEE301820615202004BCEF3 /* libtest_sql_shutdown.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_shutdown.so; sourceTree = "<group>"; };
+		8FEE301920615202004BCEF3 /* mypluglib.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mypluglib.so; sourceTree = "<group>"; };
+		8FEE301A20615202004BCEF3 /* libtest_services_threaded.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_services_threaded.so; sourceTree = "<group>"; };
+		8FEE301B20615202004BCEF3 /* replication_observers_example_plugin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = replication_observers_example_plugin.so; sourceTree = "<group>"; };
+		8FEE301C20615202004BCEF3 /* connection_control.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = connection_control.so; sourceTree = "<group>"; };
+		8FEE301D20615202004BCEF3 /* libtest_sql_cmds_1.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_cmds_1.so; sourceTree = "<group>"; };
+		8FEE301E20615202004BCEF3 /* auth.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = auth.so; sourceTree = "<group>"; };
+		8FEE301F20615202004BCEF3 /* libtest_sql_processlist.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_processlist.so; sourceTree = "<group>"; };
+		8FEE302020615202004BCEF3 /* libtest_sql_lock.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_lock.so; sourceTree = "<group>"; };
+		8FEE302120615202004BCEF3 /* auth_test_plugin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = auth_test_plugin.so; sourceTree = "<group>"; };
+		8FEE302220615202004BCEF3 /* libtest_sql_complex.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_complex.so; sourceTree = "<group>"; };
+		8FEE302320615202004BCEF3 /* rewriter.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = rewriter.so; sourceTree = "<group>"; };
+		8FEE302420615202004BCEF3 /* libtest_session_in_thd.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_session_in_thd.so; sourceTree = "<group>"; };
+		8FEE302520615202004BCEF3 /* mysql_no_login.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = mysql_no_login.so; sourceTree = "<group>"; };
+		8FEE302620615202004BCEF3 /* semisync_slave.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = semisync_slave.so; sourceTree = "<group>"; };
+		8FEE302720615202004BCEF3 /* libtest_sql_errors.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_errors.so; sourceTree = "<group>"; };
+		8FEE302820615202004BCEF3 /* libtest_sql_views_triggers.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libtest_sql_views_triggers.so; sourceTree = "<group>"; };
+		8FEE302920615202004BCEF3 /* validate_password.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = validate_password.so; sourceTree = "<group>"; };
+		8FEE302A20615202004BCEF3 /* libdaemon_example.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libdaemon_example.so; sourceTree = "<group>"; };
+		8FEE302B20615202004BCEF3 /* semisync_master.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = semisync_master.so; sourceTree = "<group>"; };
+		8FEE302C20615202004BCEF3 /* libmysqlclient.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmysqlclient.dylib; sourceTree = "<group>"; };
+		8FEE302D20615202004BCEF3 /* libmysqlservices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlservices.a; sourceTree = "<group>"; };
+		8FEE302E20615202004BCEF3 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
+		8FEE303120615202004BCEF3 /* my.cnf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = my.cnf; sourceTree = "<group>"; };
+		8FEE303520615202004BCEF3 /* mysqld.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mysqld.8; sourceTree = "<group>"; };
+		8FEE303720615202004BCEF3 /* mysqldumpslow.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqldumpslow.1; sourceTree = "<group>"; };
+		8FEE303820615202004BCEF3 /* mysql_client_test_embedded.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_client_test_embedded.1; sourceTree = "<group>"; };
+		8FEE303920615202004BCEF3 /* mysqlslap.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqlslap.1; sourceTree = "<group>"; };
+		8FEE303A20615202004BCEF3 /* mysqlcheck.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqlcheck.1; sourceTree = "<group>"; };
+		8FEE303B20615202004BCEF3 /* mysqld_safe.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqld_safe.1; sourceTree = "<group>"; };
+		8FEE303C20615202004BCEF3 /* myisam_ftdump.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = myisam_ftdump.1; sourceTree = "<group>"; };
+		8FEE303D20615202004BCEF3 /* mysqlshow.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqlshow.1; sourceTree = "<group>"; };
+		8FEE303E20615202004BCEF3 /* mysql_install_db.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_install_db.1; sourceTree = "<group>"; };
+		8FEE303F20615202004BCEF3 /* mysql_upgrade.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_upgrade.1; sourceTree = "<group>"; };
+		8FEE304020615202004BCEF3 /* perror.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = perror.1; sourceTree = "<group>"; };
+		8FEE304120615202004BCEF3 /* mysqlman.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqlman.1; sourceTree = "<group>"; };
+		8FEE304220615202004BCEF3 /* replace.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = replace.1; sourceTree = "<group>"; };
+		8FEE304320615202004BCEF3 /* mysqld_multi.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqld_multi.1; sourceTree = "<group>"; };
+		8FEE304420615202004BCEF3 /* mysqladmin.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqladmin.1; sourceTree = "<group>"; };
+		8FEE304520615202004BCEF3 /* resolveip.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = resolveip.1; sourceTree = "<group>"; };
+		8FEE304620615202004BCEF3 /* mysql-test-run.pl.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "mysql-test-run.pl.1"; sourceTree = "<group>"; };
+		8FEE304720615202004BCEF3 /* myisamchk.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = myisamchk.1; sourceTree = "<group>"; };
+		8FEE304820615202004BCEF3 /* mysql.server.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql.server.1; sourceTree = "<group>"; };
+		8FEE304920615202004BCEF3 /* mysql_plugin.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_plugin.1; sourceTree = "<group>"; };
+		8FEE304A20615202004BCEF3 /* zlib_decompress.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = zlib_decompress.1; sourceTree = "<group>"; };
+		8FEE304B20615202004BCEF3 /* mysqltest_embedded.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqltest_embedded.1; sourceTree = "<group>"; };
+		8FEE304C20615202004BCEF3 /* mysql_config.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_config.1; sourceTree = "<group>"; };
+		8FEE304D20615202004BCEF3 /* mysql-stress-test.pl.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "mysql-stress-test.pl.1"; sourceTree = "<group>"; };
+		8FEE304E20615202004BCEF3 /* mysqlpump.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqlpump.1; sourceTree = "<group>"; };
+		8FEE304F20615202004BCEF3 /* mysqlbinlog.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqlbinlog.1; sourceTree = "<group>"; };
+		8FEE305020615202004BCEF3 /* lz4_decompress.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = lz4_decompress.1; sourceTree = "<group>"; };
+		8FEE305120615202004BCEF3 /* innochecksum.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = innochecksum.1; sourceTree = "<group>"; };
+		8FEE305220615202004BCEF3 /* comp_err.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = comp_err.1; sourceTree = "<group>"; };
+		8FEE305320615202004BCEF3 /* mysql_config_editor.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_config_editor.1; sourceTree = "<group>"; };
+		8FEE305420615202004BCEF3 /* mysqldump.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqldump.1; sourceTree = "<group>"; };
+		8FEE305520615202004BCEF3 /* my_print_defaults.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = my_print_defaults.1; sourceTree = "<group>"; };
+		8FEE305620615202004BCEF3 /* mysql_tzinfo_to_sql.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_tzinfo_to_sql.1; sourceTree = "<group>"; };
+		8FEE305720615202004BCEF3 /* mysqlimport.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqlimport.1; sourceTree = "<group>"; };
+		8FEE305820615202004BCEF3 /* mysql.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql.1; sourceTree = "<group>"; };
+		8FEE305920615202004BCEF3 /* resolve_stack_dump.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = resolve_stack_dump.1; sourceTree = "<group>"; };
+		8FEE305A20615202004BCEF3 /* mysql_secure_installation.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_secure_installation.1; sourceTree = "<group>"; };
+		8FEE305B20615202004BCEF3 /* mysql_client_test.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_client_test.1; sourceTree = "<group>"; };
+		8FEE305C20615202004BCEF3 /* myisamlog.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = myisamlog.1; sourceTree = "<group>"; };
+		8FEE305D20615202004BCEF3 /* mysqltest.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysqltest.1; sourceTree = "<group>"; };
+		8FEE305E20615202004BCEF3 /* myisampack.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = myisampack.1; sourceTree = "<group>"; };
+		8FEE305F20615202004BCEF3 /* mysql_ssl_rsa_setup.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = mysql_ssl_rsa_setup.1; sourceTree = "<group>"; };
+		8FEE306120615202004BCEF3 /* mysql.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mysql.m4; sourceTree = "<group>"; };
+		8FEE306420615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE306620615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE306820615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE306A20615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE306C20615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE306E20615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE307020615202004BCEF3 /* cp866.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cp866.xml; sourceTree = "<group>"; };
+		8FEE307120615202004BCEF3 /* macroman.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = macroman.xml; sourceTree = "<group>"; };
+		8FEE307220615202004BCEF3 /* Index.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Index.xml; sourceTree = "<group>"; };
+		8FEE307320615202004BCEF3 /* swe7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = swe7.xml; sourceTree = "<group>"; };
+		8FEE307420615202004BCEF3 /* geostd8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = geostd8.xml; sourceTree = "<group>"; };
+		8FEE307520615202004BCEF3 /* cp1250.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cp1250.xml; sourceTree = "<group>"; };
+		8FEE307620615202004BCEF3 /* cp1251.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cp1251.xml; sourceTree = "<group>"; };
+		8FEE307720615202004BCEF3 /* keybcs2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = keybcs2.xml; sourceTree = "<group>"; };
+		8FEE307820615202004BCEF3 /* hp8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hp8.xml; sourceTree = "<group>"; };
+		8FEE307920615202004BCEF3 /* cp1256.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cp1256.xml; sourceTree = "<group>"; };
+		8FEE307A20615202004BCEF3 /* cp1257.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cp1257.xml; sourceTree = "<group>"; };
+		8FEE307B20615202004BCEF3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		8FEE307C20615202004BCEF3 /* hebrew.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hebrew.xml; sourceTree = "<group>"; };
+		8FEE307D20615202004BCEF3 /* greek.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = greek.xml; sourceTree = "<group>"; };
+		8FEE307E20615202004BCEF3 /* ascii.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ascii.xml; sourceTree = "<group>"; };
+		8FEE307F20615202004BCEF3 /* macce.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = macce.xml; sourceTree = "<group>"; };
+		8FEE308020615202004BCEF3 /* dec8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dec8.xml; sourceTree = "<group>"; };
+		8FEE308120615202004BCEF3 /* latin2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = latin2.xml; sourceTree = "<group>"; };
+		8FEE308220615202004BCEF3 /* cp850.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cp850.xml; sourceTree = "<group>"; };
+		8FEE308320615202004BCEF3 /* koi8u.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = koi8u.xml; sourceTree = "<group>"; };
+		8FEE308420615202004BCEF3 /* latin1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = latin1.xml; sourceTree = "<group>"; };
+		8FEE308520615202004BCEF3 /* cp852.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cp852.xml; sourceTree = "<group>"; };
+		8FEE308620615202004BCEF3 /* latin5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = latin5.xml; sourceTree = "<group>"; };
+		8FEE308720615202004BCEF3 /* latin7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = latin7.xml; sourceTree = "<group>"; };
+		8FEE308820615202004BCEF3 /* armscii8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = armscii8.xml; sourceTree = "<group>"; };
+		8FEE308920615202004BCEF3 /* koi8r.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = koi8r.xml; sourceTree = "<group>"; };
+		8FEE308B20615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE308D20615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE308E20615202004BCEF3 /* mysql_security_commands.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mysql_security_commands.sql; sourceTree = "<group>"; };
+		8FEE308F20615202004BCEF3 /* install_rewriter.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install_rewriter.sql; sourceTree = "<group>"; };
+		8FEE309120615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE309220615202004BCEF3 /* mysql_sys_schema.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mysql_sys_schema.sql; sourceTree = "<group>"; };
+		8FEE309420615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE309620615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE309820615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE309920615202004BCEF3 /* fill_help_tables.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fill_help_tables.sql; sourceTree = "<group>"; };
+		8FEE309A20615202004BCEF3 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
+		8FEE309B20615202004BCEF3 /* mysql_system_tables.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mysql_system_tables.sql; sourceTree = "<group>"; };
+		8FEE309C20615202004BCEF3 /* innodb_memcached_config.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = innodb_memcached_config.sql; sourceTree = "<group>"; };
+		8FEE309E20615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30A020615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30A220615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30A420615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30A620615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30A720615202004BCEF3 /* errmsg-utf8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "errmsg-utf8.txt"; sourceTree = "<group>"; };
+		8FEE30A920615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30AB20615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30AD20615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30AF20615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30B120615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30B320615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30B420615202004BCEF3 /* uninstall_rewriter.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uninstall_rewriter.sql; sourceTree = "<group>"; };
+		8FEE30B620615202004BCEF3 /* errmsg.sys */ = {isa = PBXFileReference; lastKnownFileType = file; path = errmsg.sys; sourceTree = "<group>"; };
+		8FEE30B720615202004BCEF3 /* mysql_system_tables_data.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mysql_system_tables_data.sql; sourceTree = "<group>"; };
+		8FEE30B820615202004BCEF3 /* mysql_test_data_timezone.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mysql_test_data_timezone.sql; sourceTree = "<group>"; };
+		8FEE30BB20615202004BCEF3 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		8FEE30BC20615202004BCEF3 /* INFO_SRC */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INFO_SRC; sourceTree = "<group>"; };
+		8FEE30BD20615202004BCEF3 /* INFO_BIN */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INFO_BIN; sourceTree = "<group>"; };
+		8FEE30C92061523F004BCEF3 /* database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = database.h; sourceTree = "<group>"; };
+		8FEE30CA2061523F004BCEF3 /* database.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = database.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +411,14 @@
 			files = (
 				8F1E143620601A43004BEBF2 /* libpng16.dylib in Frameworks */,
 				8F1E143420601A43004BEBF2 /* libpng16.16.dylib in Frameworks */,
+				8FEE30C620615202004BCEF3 /* libmysqlclient.dylib in Frameworks */,
 				8F1E143220601A43004BEBF2 /* libpng16.a in Frameworks */,
 				8F1E143520601A43004BEBF2 /* libpng.dylib in Frameworks */,
+				8FEE30C820615202004BCEF3 /* libmysqlclient.a in Frameworks */,
 				8F1E143320601A43004BEBF2 /* libpng.a in Frameworks */,
+				8FEE30C520615202004BCEF3 /* libmysqld.a in Frameworks */,
+				8FEE30C720615202004BCEF3 /* libmysqlservices.a in Frameworks */,
+				8FEE30C420615202004BCEF3 /* libmysqlclient.20.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +585,8 @@
 		8FED54082057DD780003C1E7 /* GestionPersonnel */ = {
 			isa = PBXGroup;
 			children = (
+				8FEE30CC20615A77004BCEF3 /* database */,
+				8FEE2F4C20615202004BCEF3 /* mysql */,
 				8F1E140C20601A26004BEBF2 /* libpng */,
 				8F1E140A206019DF004BEBF2 /* QRCode */,
 				8F1E1409206019D1004BEBF2 /* Png */,
@@ -251,6 +595,713 @@
 				8FED54112057DD950003C1E7 /* library.c */,
 			);
 			path = GestionPersonnel;
+			sourceTree = "<group>";
+		};
+		8FEE2F4C20615202004BCEF3 /* mysql */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2F4D20615202004BCEF3 /* 5.7.21 */,
+			);
+			path = mysql;
+			sourceTree = "<group>";
+		};
+		8FEE2F4D20615202004BCEF3 /* 5.7.21 */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2F4E20615202004BCEF3 /* COPYING-test */,
+				8FEE2F4F20615202004BCEF3 /* homebrew.mxcl.mysql.plist */,
+				8FEE2F5020615202004BCEF3 /* INSTALL_RECEIPT.json */,
+				8FEE2F5120615202004BCEF3 /* bin */,
+				8FEE2F7A20615202004BCEF3 /* README-test */,
+				8FEE2F7B20615202004BCEF3 /* .brew */,
+				8FEE2F7D20615202004BCEF3 /* support-files */,
+				8FEE2F8220615202004BCEF3 /* include */,
+				8FEE2FF420615202004BCEF3 /* README */,
+				8FEE2FF520615202004BCEF3 /* COPYING */,
+				8FEE2FF620615202004BCEF3 /* lib */,
+				8FEE302F20615202004BCEF3 /* .bottle */,
+				8FEE303220615202004BCEF3 /* share */,
+			);
+			path = 5.7.21;
+			sourceTree = "<group>";
+		};
+		8FEE2F5120615202004BCEF3 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2F5220615202004BCEF3 /* mysqlbinlog */,
+				8FEE2F5320615202004BCEF3 /* mysql_config_editor */,
+				8FEE2F5420615202004BCEF3 /* mysql_plugin */,
+				8FEE2F5520615202004BCEF3 /* mysql_tzinfo_to_sql */,
+				8FEE2F5620615202004BCEF3 /* resolveip */,
+				8FEE2F5720615202004BCEF3 /* mysql_install_db */,
+				8FEE2F5820615202004BCEF3 /* my_print_defaults */,
+				8FEE2F5920615202004BCEF3 /* resolve_stack_dump */,
+				8FEE2F5A20615202004BCEF3 /* mysqldumpslow */,
+				8FEE2F5B20615202004BCEF3 /* mysqld */,
+				8FEE2F5C20615202004BCEF3 /* mysqltest_embedded */,
+				8FEE2F5D20615202004BCEF3 /* mysql_config */,
+				8FEE2F5E20615202004BCEF3 /* mysqld_multi */,
+				8FEE2F5F20615202004BCEF3 /* mysqlcheck */,
+				8FEE2F6020615202004BCEF3 /* mysqlimport */,
+				8FEE2F6120615202004BCEF3 /* mysqlpump */,
+				8FEE2F6220615202004BCEF3 /* perror */,
+				8FEE2F6320615202004BCEF3 /* lz4_decompress */,
+				8FEE2F6420615202004BCEF3 /* zlib_decompress */,
+				8FEE2F6520615202004BCEF3 /* mysql_client_test */,
+				8FEE2F6620615202004BCEF3 /* mysqlshow */,
+				8FEE2F6720615202004BCEF3 /* myisamchk */,
+				8FEE2F6820615202004BCEF3 /* mysql_secure_installation */,
+				8FEE2F6920615202004BCEF3 /* mysql_ssl_rsa_setup */,
+				8FEE2F6A20615202004BCEF3 /* mysql */,
+				8FEE2F6B20615202004BCEF3 /* myisampack */,
+				8FEE2F6C20615202004BCEF3 /* mysql_embedded */,
+				8FEE2F6D20615202004BCEF3 /* mysql_client_test_embedded */,
+				8FEE2F6E20615202004BCEF3 /* myisamlog */,
+				8FEE2F6F20615202004BCEF3 /* replace */,
+				8FEE2F7020615202004BCEF3 /* myisam_ftdump */,
+				8FEE2F7120615202004BCEF3 /* innochecksum */,
+				8FEE2F7220615202004BCEF3 /* mysqladmin */,
+				8FEE2F7320615202004BCEF3 /* mysqldump */,
+				8FEE2F7420615202004BCEF3 /* mysql.server */,
+				8FEE2F7520615202004BCEF3 /* mysqlxtest */,
+				8FEE2F7620615202004BCEF3 /* mysql_upgrade */,
+				8FEE2F7720615202004BCEF3 /* mysqltest */,
+				8FEE2F7820615202004BCEF3 /* mysqld_safe */,
+				8FEE2F7920615202004BCEF3 /* mysqlslap */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		8FEE2F7B20615202004BCEF3 /* .brew */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2F7C20615202004BCEF3 /* mysql.rb */,
+			);
+			path = .brew;
+			sourceTree = "<group>";
+		};
+		8FEE2F7D20615202004BCEF3 /* support-files */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2F7E20615202004BCEF3 /* magic */,
+				8FEE2F7F20615202004BCEF3 /* mysqld_multi.server */,
+				8FEE2F8020615202004BCEF3 /* mysql-log-rotate */,
+				8FEE2F8120615202004BCEF3 /* mysql.server */,
+			);
+			path = "support-files";
+			sourceTree = "<group>";
+		};
+		8FEE2F8220615202004BCEF3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2F8320615202004BCEF3 /* mysql */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8FEE2F8320615202004BCEF3 /* mysql */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2F8420615202004BCEF3 /* mysql_com_server.h */,
+				8FEE2F8520615202004BCEF3 /* byte_order_generic.h */,
+				8FEE2F8620615202004BCEF3 /* my_command.h */,
+				8FEE2F8720615202004BCEF3 /* thr_rwlock.h */,
+				8FEE2F8820615202004BCEF3 /* my_byteorder.h */,
+				8FEE2F8920615202004BCEF3 /* my_config.h */,
+				8FEE2F8A20615202004BCEF3 /* my_thread_local.h */,
+				8FEE2F8B20615202004BCEF3 /* plugin.h */,
+				8FEE2F8C20615202004BCEF3 /* keycache.h */,
+				8FEE2F8D20615202004BCEF3 /* plugin_group_replication.h */,
+				8FEE2F8E20615202004BCEF3 /* binary_log_types.h */,
+				8FEE2F8F20615202004BCEF3 /* mysqld_ername.h */,
+				8FEE2F9020615202004BCEF3 /* m_ctype.h */,
+				8FEE2F9120615202004BCEF3 /* big_endian.h */,
+				8FEE2F9220615202004BCEF3 /* my_global.h */,
+				8FEE2F9320615202004BCEF3 /* plugin_ftparser.h */,
+				8FEE2F9420615202004BCEF3 /* little_endian.h */,
+				8FEE2F9520615202004BCEF3 /* thr_cond.h */,
+				8FEE2F9620615202004BCEF3 /* mysql_version.h */,
+				8FEE2F9720615202004BCEF3 /* sslopt-vars.h */,
+				8FEE2F9820615202004BCEF3 /* my_getopt.h */,
+				8FEE2F9920615202004BCEF3 /* decimal.h */,
+				8FEE2F9A20615202004BCEF3 /* sslopt-case.h */,
+				8FEE2F9B20615202004BCEF3 /* m_string.h */,
+				8FEE2F9C20615202004BCEF3 /* plugin_keyring.h */,
+				8FEE2F9D20615202004BCEF3 /* mysql_time.h */,
+				8FEE2F9E20615202004BCEF3 /* my_thread.h */,
+				8FEE2F9F20615202004BCEF3 /* my_list.h */,
+				8FEE2FA020615202004BCEF3 /* mysqlx_version.h */,
+				8FEE2FA120615202004BCEF3 /* sslopt-longopts.h */,
+				8FEE2FA220615202004BCEF3 /* typelib.h */,
+				8FEE2FA320615202004BCEF3 /* mysql_com.h */,
+				8FEE2FA420615202004BCEF3 /* mysql */,
+				8FEE2FE220615202004BCEF3 /* plugin_validate_password.h */,
+				8FEE2FE320615202004BCEF3 /* my_dir.h */,
+				8FEE2FE420615202004BCEF3 /* thr_mutex.h */,
+				8FEE2FE520615202004BCEF3 /* plugin_audit.h */,
+				8FEE2FE620615202004BCEF3 /* mysql.h */,
+				8FEE2FE720615202004BCEF3 /* mysqlx_error.h */,
+				8FEE2FE820615202004BCEF3 /* mysqlx_ername.h */,
+				8FEE2FE920615202004BCEF3 /* my_xml.h */,
+				8FEE2FEA20615202004BCEF3 /* sql_common.h */,
+				8FEE2FEB20615202004BCEF3 /* my_alloc.h */,
+				8FEE2FEC20615202004BCEF3 /* byte_order_generic_x86.h */,
+				8FEE2FED20615202004BCEF3 /* mysqld_error.h */,
+				8FEE2FEE20615202004BCEF3 /* my_compiler.h */,
+				8FEE2FEF20615202004BCEF3 /* my_sys.h */,
+				8FEE2FF020615202004BCEF3 /* sql_state.h */,
+				8FEE2FF120615202004BCEF3 /* my_dbug.h */,
+				8FEE2FF220615202004BCEF3 /* errmsg.h */,
+				8FEE2FF320615202004BCEF3 /* mysql_embed.h */,
+			);
+			path = mysql;
+			sourceTree = "<group>";
+		};
+		8FEE2FA420615202004BCEF3 /* mysql */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2FA520615202004BCEF3 /* service_mysql_keyring.h */,
+				8FEE2FA620615202004BCEF3 /* plugin_auth.h.pp */,
+				8FEE2FA720615202004BCEF3 /* com_data.h */,
+				8FEE2FA820615202004BCEF3 /* mysql_lex_string.h */,
+				8FEE2FA920615202004BCEF3 /* plugin.h */,
+				8FEE2FAA20615202004BCEF3 /* service_rpl_transaction_write_set.h */,
+				8FEE2FAB20615202004BCEF3 /* service_mysql_alloc.h */,
+				8FEE2FAC20615202004BCEF3 /* plugin_group_replication.h */,
+				8FEE2FAD20615202004BCEF3 /* services.h.pp */,
+				8FEE2FAE20615202004BCEF3 /* service_ssl_wrapper.h */,
+				8FEE2FAF20615202004BCEF3 /* service_thd_wait.h */,
+				8FEE2FB020615202004BCEF3 /* plugin_auth_common.h */,
+				8FEE2FB120615202004BCEF3 /* plugin_ftparser.h */,
+				8FEE2FB220615202004BCEF3 /* plugin_trace.h */,
+				8FEE2FB320615202004BCEF3 /* plugin_auth.h */,
+				8FEE2FB420615202004BCEF3 /* thread_type.h */,
+				8FEE2FB520615202004BCEF3 /* services.h */,
+				8FEE2FB620615202004BCEF3 /* get_password.h */,
+				8FEE2FB720615202004BCEF3 /* service_command.h */,
+				8FEE2FB820615202004BCEF3 /* plugin_keyring.h */,
+				8FEE2FB920615202004BCEF3 /* plugin_audit.h.pp */,
+				8FEE2FBA20615202004BCEF3 /* plugin_ftparser.h.pp */,
+				8FEE2FBB20615202004BCEF3 /* service_my_snprintf.h */,
+				8FEE2FBC20615202004BCEF3 /* service_rpl_transaction_ctx.h */,
+				8FEE2FBD20615202004BCEF3 /* thread_pool_priv.h */,
+				8FEE2FBE20615202004BCEF3 /* client_plugin.h.pp */,
+				8FEE2FBF20615202004BCEF3 /* client_plugin.h */,
+				8FEE2FC020615202004BCEF3 /* service_my_plugin_log.h */,
+				8FEE2FC120615202004BCEF3 /* service_rules_table.h */,
+				8FEE2FC220615202004BCEF3 /* plugin_validate_password.h */,
+				8FEE2FC320615202004BCEF3 /* plugin_audit.h */,
+				8FEE2FC420615202004BCEF3 /* service_parser.h */,
+				8FEE2FC520615202004BCEF3 /* service_srv_session_info.h */,
+				8FEE2FC620615202004BCEF3 /* service_thread_scheduler.h */,
+				8FEE2FC720615202004BCEF3 /* psi */,
+				8FEE2FD720615202004BCEF3 /* service_mysql_string.h */,
+				8FEE2FD820615202004BCEF3 /* innodb_priv.h */,
+				8FEE2FD920615202004BCEF3 /* service_security_context.h */,
+				8FEE2FDA20615202004BCEF3 /* group_replication_priv.h */,
+				8FEE2FDB20615202004BCEF3 /* client_authentication.h */,
+				8FEE2FDC20615202004BCEF3 /* service_mysql_password_policy.h */,
+				8FEE2FDD20615202004BCEF3 /* service_srv_session.h */,
+				8FEE2FDE20615202004BCEF3 /* plugin_keyring.h.pp */,
+				8FEE2FDF20615202004BCEF3 /* service_thd_alloc.h */,
+				8FEE2FE020615202004BCEF3 /* service_thd_engine_lock.h */,
+				8FEE2FE120615202004BCEF3 /* service_locking.h */,
+			);
+			path = mysql;
+			sourceTree = "<group>";
+		};
+		8FEE2FC720615202004BCEF3 /* psi */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2FC820615202004BCEF3 /* mysql_ps.h */,
+				8FEE2FC920615202004BCEF3 /* mysql_transaction.h */,
+				8FEE2FCA20615202004BCEF3 /* mysql_file.h */,
+				8FEE2FCB20615202004BCEF3 /* mysql_idle.h */,
+				8FEE2FCC20615202004BCEF3 /* psi.h */,
+				8FEE2FCD20615202004BCEF3 /* mysql_stage.h */,
+				8FEE2FCE20615202004BCEF3 /* mysql_table.h */,
+				8FEE2FCF20615202004BCEF3 /* psi_memory.h */,
+				8FEE2FD020615202004BCEF3 /* psi_base.h */,
+				8FEE2FD120615202004BCEF3 /* mysql_socket.h */,
+				8FEE2FD220615202004BCEF3 /* mysql_sp.h */,
+				8FEE2FD320615202004BCEF3 /* mysql_statement.h */,
+				8FEE2FD420615202004BCEF3 /* mysql_thread.h */,
+				8FEE2FD520615202004BCEF3 /* mysql_memory.h */,
+				8FEE2FD620615202004BCEF3 /* mysql_mdl.h */,
+			);
+			path = psi;
+			sourceTree = "<group>";
+		};
+		8FEE2FF620615202004BCEF3 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2FF720615202004BCEF3 /* pkgconfig */,
+				8FEE2FF920615202004BCEF3 /* libmysqlclient.20.dylib */,
+				8FEE2FFA20615202004BCEF3 /* libmysqld.a */,
+				8FEE2FFB20615202004BCEF3 /* plugin */,
+				8FEE302C20615202004BCEF3 /* libmysqlclient.dylib */,
+				8FEE302D20615202004BCEF3 /* libmysqlservices.a */,
+				8FEE302E20615202004BCEF3 /* libmysqlclient.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		8FEE2FF720615202004BCEF3 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2FF820615202004BCEF3 /* mysqlclient.pc */,
+			);
+			path = pkgconfig;
+			sourceTree = "<group>";
+		};
+		8FEE2FFB20615202004BCEF3 /* plugin */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE2FFC20615202004BCEF3 /* keyring_file.so */,
+				8FEE2FFD20615202004BCEF3 /* libtest_x_sessions_init.so */,
+				8FEE2FFE20615202004BCEF3 /* qa_auth_interface.so */,
+				8FEE2FFF20615202004BCEF3 /* libtest_sql_stored_procedures_functions.so */,
+				8FEE300020615202004BCEF3 /* mysqlx.so */,
+				8FEE300120615202004BCEF3 /* version_token.so */,
+				8FEE300220615202004BCEF3 /* ha_example.so */,
+				8FEE300320615202004BCEF3 /* libtest_services.so */,
+				8FEE300420615202004BCEF3 /* qa_auth_client.so */,
+				8FEE300520615202004BCEF3 /* rewrite_example.so */,
+				8FEE300620615202004BCEF3 /* libtest_sql_all_col_types.so */,
+				8FEE300720615202004BCEF3 /* libtest_x_sessions_deinit.so */,
+				8FEE300820615202004BCEF3 /* locking_service.so */,
+				8FEE300920615202004BCEF3 /* libtest_sql_2_sessions.so */,
+				8FEE300A20615202004BCEF3 /* group_replication.so */,
+				8FEE300B20615202004BCEF3 /* test_security_context.so */,
+				8FEE300C20615202004BCEF3 /* libtest_sql_sqlmode.so */,
+				8FEE300D20615202004BCEF3 /* libtest_sql_commit.so */,
+				8FEE300E20615202004BCEF3 /* test_udf_services.so */,
+				8FEE300F20615202004BCEF3 /* keyring_udf.so */,
+				8FEE301020615202004BCEF3 /* daemon_example.ini */,
+				8FEE301120615202004BCEF3 /* libtest_framework.so */,
+				8FEE301220615202004BCEF3 /* libtest_session_info.so */,
+				8FEE301320615202004BCEF3 /* authentication_ldap_sasl_client.so */,
+				8FEE301420615202004BCEF3 /* libtest_session_detach.so */,
+				8FEE301520615202004BCEF3 /* libtest_sql_replication.so */,
+				8FEE301620615202004BCEF3 /* adt_null.so */,
+				8FEE301720615202004BCEF3 /* qa_auth_server.so */,
+				8FEE301820615202004BCEF3 /* libtest_sql_shutdown.so */,
+				8FEE301920615202004BCEF3 /* mypluglib.so */,
+				8FEE301A20615202004BCEF3 /* libtest_services_threaded.so */,
+				8FEE301B20615202004BCEF3 /* replication_observers_example_plugin.so */,
+				8FEE301C20615202004BCEF3 /* connection_control.so */,
+				8FEE301D20615202004BCEF3 /* libtest_sql_cmds_1.so */,
+				8FEE301E20615202004BCEF3 /* auth.so */,
+				8FEE301F20615202004BCEF3 /* libtest_sql_processlist.so */,
+				8FEE302020615202004BCEF3 /* libtest_sql_lock.so */,
+				8FEE302120615202004BCEF3 /* auth_test_plugin.so */,
+				8FEE302220615202004BCEF3 /* libtest_sql_complex.so */,
+				8FEE302320615202004BCEF3 /* rewriter.so */,
+				8FEE302420615202004BCEF3 /* libtest_session_in_thd.so */,
+				8FEE302520615202004BCEF3 /* mysql_no_login.so */,
+				8FEE302620615202004BCEF3 /* semisync_slave.so */,
+				8FEE302720615202004BCEF3 /* libtest_sql_errors.so */,
+				8FEE302820615202004BCEF3 /* libtest_sql_views_triggers.so */,
+				8FEE302920615202004BCEF3 /* validate_password.so */,
+				8FEE302A20615202004BCEF3 /* libdaemon_example.so */,
+				8FEE302B20615202004BCEF3 /* semisync_master.so */,
+			);
+			path = plugin;
+			sourceTree = "<group>";
+		};
+		8FEE302F20615202004BCEF3 /* .bottle */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE303020615202004BCEF3 /* etc */,
+			);
+			path = .bottle;
+			sourceTree = "<group>";
+		};
+		8FEE303020615202004BCEF3 /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE303120615202004BCEF3 /* my.cnf */,
+			);
+			path = etc;
+			sourceTree = "<group>";
+		};
+		8FEE303220615202004BCEF3 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE303320615202004BCEF3 /* man */,
+				8FEE306020615202004BCEF3 /* aclocal */,
+				8FEE306220615202004BCEF3 /* mysql */,
+				8FEE30B920615202004BCEF3 /* doc */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		8FEE303320615202004BCEF3 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE303420615202004BCEF3 /* man8 */,
+				8FEE303620615202004BCEF3 /* man1 */,
+			);
+			path = man;
+			sourceTree = "<group>";
+		};
+		8FEE303420615202004BCEF3 /* man8 */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE303520615202004BCEF3 /* mysqld.8 */,
+			);
+			path = man8;
+			sourceTree = "<group>";
+		};
+		8FEE303620615202004BCEF3 /* man1 */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE303720615202004BCEF3 /* mysqldumpslow.1 */,
+				8FEE303820615202004BCEF3 /* mysql_client_test_embedded.1 */,
+				8FEE303920615202004BCEF3 /* mysqlslap.1 */,
+				8FEE303A20615202004BCEF3 /* mysqlcheck.1 */,
+				8FEE303B20615202004BCEF3 /* mysqld_safe.1 */,
+				8FEE303C20615202004BCEF3 /* myisam_ftdump.1 */,
+				8FEE303D20615202004BCEF3 /* mysqlshow.1 */,
+				8FEE303E20615202004BCEF3 /* mysql_install_db.1 */,
+				8FEE303F20615202004BCEF3 /* mysql_upgrade.1 */,
+				8FEE304020615202004BCEF3 /* perror.1 */,
+				8FEE304120615202004BCEF3 /* mysqlman.1 */,
+				8FEE304220615202004BCEF3 /* replace.1 */,
+				8FEE304320615202004BCEF3 /* mysqld_multi.1 */,
+				8FEE304420615202004BCEF3 /* mysqladmin.1 */,
+				8FEE304520615202004BCEF3 /* resolveip.1 */,
+				8FEE304620615202004BCEF3 /* mysql-test-run.pl.1 */,
+				8FEE304720615202004BCEF3 /* myisamchk.1 */,
+				8FEE304820615202004BCEF3 /* mysql.server.1 */,
+				8FEE304920615202004BCEF3 /* mysql_plugin.1 */,
+				8FEE304A20615202004BCEF3 /* zlib_decompress.1 */,
+				8FEE304B20615202004BCEF3 /* mysqltest_embedded.1 */,
+				8FEE304C20615202004BCEF3 /* mysql_config.1 */,
+				8FEE304D20615202004BCEF3 /* mysql-stress-test.pl.1 */,
+				8FEE304E20615202004BCEF3 /* mysqlpump.1 */,
+				8FEE304F20615202004BCEF3 /* mysqlbinlog.1 */,
+				8FEE305020615202004BCEF3 /* lz4_decompress.1 */,
+				8FEE305120615202004BCEF3 /* innochecksum.1 */,
+				8FEE305220615202004BCEF3 /* comp_err.1 */,
+				8FEE305320615202004BCEF3 /* mysql_config_editor.1 */,
+				8FEE305420615202004BCEF3 /* mysqldump.1 */,
+				8FEE305520615202004BCEF3 /* my_print_defaults.1 */,
+				8FEE305620615202004BCEF3 /* mysql_tzinfo_to_sql.1 */,
+				8FEE305720615202004BCEF3 /* mysqlimport.1 */,
+				8FEE305820615202004BCEF3 /* mysql.1 */,
+				8FEE305920615202004BCEF3 /* resolve_stack_dump.1 */,
+				8FEE305A20615202004BCEF3 /* mysql_secure_installation.1 */,
+				8FEE305B20615202004BCEF3 /* mysql_client_test.1 */,
+				8FEE305C20615202004BCEF3 /* myisamlog.1 */,
+				8FEE305D20615202004BCEF3 /* mysqltest.1 */,
+				8FEE305E20615202004BCEF3 /* myisampack.1 */,
+				8FEE305F20615202004BCEF3 /* mysql_ssl_rsa_setup.1 */,
+			);
+			path = man1;
+			sourceTree = "<group>";
+		};
+		8FEE306020615202004BCEF3 /* aclocal */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE306120615202004BCEF3 /* mysql.m4 */,
+			);
+			path = aclocal;
+			sourceTree = "<group>";
+		};
+		8FEE306220615202004BCEF3 /* mysql */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE306320615202004BCEF3 /* bulgarian */,
+				8FEE306520615202004BCEF3 /* dutch */,
+				8FEE306720615202004BCEF3 /* korean */,
+				8FEE306920615202004BCEF3 /* czech */,
+				8FEE306B20615202004BCEF3 /* serbian */,
+				8FEE306D20615202004BCEF3 /* japanese */,
+				8FEE306F20615202004BCEF3 /* charsets */,
+				8FEE308A20615202004BCEF3 /* german */,
+				8FEE308C20615202004BCEF3 /* estonian */,
+				8FEE308E20615202004BCEF3 /* mysql_security_commands.sql */,
+				8FEE308F20615202004BCEF3 /* install_rewriter.sql */,
+				8FEE309020615202004BCEF3 /* hungarian */,
+				8FEE309220615202004BCEF3 /* mysql_sys_schema.sql */,
+				8FEE309320615202004BCEF3 /* slovak */,
+				8FEE309520615202004BCEF3 /* romanian */,
+				8FEE309720615202004BCEF3 /* norwegian-ny */,
+				8FEE309920615202004BCEF3 /* fill_help_tables.sql */,
+				8FEE309A20615202004BCEF3 /* dictionary.txt */,
+				8FEE309B20615202004BCEF3 /* mysql_system_tables.sql */,
+				8FEE309C20615202004BCEF3 /* innodb_memcached_config.sql */,
+				8FEE309D20615202004BCEF3 /* russian */,
+				8FEE309F20615202004BCEF3 /* italian */,
+				8FEE30A120615202004BCEF3 /* english */,
+				8FEE30A320615202004BCEF3 /* greek */,
+				8FEE30A520615202004BCEF3 /* norwegian */,
+				8FEE30A720615202004BCEF3 /* errmsg-utf8.txt */,
+				8FEE30A820615202004BCEF3 /* portuguese */,
+				8FEE30AA20615202004BCEF3 /* danish */,
+				8FEE30AC20615202004BCEF3 /* polish */,
+				8FEE30AE20615202004BCEF3 /* french */,
+				8FEE30B020615202004BCEF3 /* swedish */,
+				8FEE30B220615202004BCEF3 /* spanish */,
+				8FEE30B420615202004BCEF3 /* uninstall_rewriter.sql */,
+				8FEE30B520615202004BCEF3 /* ukrainian */,
+				8FEE30B720615202004BCEF3 /* mysql_system_tables_data.sql */,
+				8FEE30B820615202004BCEF3 /* mysql_test_data_timezone.sql */,
+			);
+			path = mysql;
+			sourceTree = "<group>";
+		};
+		8FEE306320615202004BCEF3 /* bulgarian */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE306420615202004BCEF3 /* errmsg.sys */,
+			);
+			path = bulgarian;
+			sourceTree = "<group>";
+		};
+		8FEE306520615202004BCEF3 /* dutch */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE306620615202004BCEF3 /* errmsg.sys */,
+			);
+			path = dutch;
+			sourceTree = "<group>";
+		};
+		8FEE306720615202004BCEF3 /* korean */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE306820615202004BCEF3 /* errmsg.sys */,
+			);
+			path = korean;
+			sourceTree = "<group>";
+		};
+		8FEE306920615202004BCEF3 /* czech */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE306A20615202004BCEF3 /* errmsg.sys */,
+			);
+			path = czech;
+			sourceTree = "<group>";
+		};
+		8FEE306B20615202004BCEF3 /* serbian */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE306C20615202004BCEF3 /* errmsg.sys */,
+			);
+			path = serbian;
+			sourceTree = "<group>";
+		};
+		8FEE306D20615202004BCEF3 /* japanese */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE306E20615202004BCEF3 /* errmsg.sys */,
+			);
+			path = japanese;
+			sourceTree = "<group>";
+		};
+		8FEE306F20615202004BCEF3 /* charsets */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE307020615202004BCEF3 /* cp866.xml */,
+				8FEE307120615202004BCEF3 /* macroman.xml */,
+				8FEE307220615202004BCEF3 /* Index.xml */,
+				8FEE307320615202004BCEF3 /* swe7.xml */,
+				8FEE307420615202004BCEF3 /* geostd8.xml */,
+				8FEE307520615202004BCEF3 /* cp1250.xml */,
+				8FEE307620615202004BCEF3 /* cp1251.xml */,
+				8FEE307720615202004BCEF3 /* keybcs2.xml */,
+				8FEE307820615202004BCEF3 /* hp8.xml */,
+				8FEE307920615202004BCEF3 /* cp1256.xml */,
+				8FEE307A20615202004BCEF3 /* cp1257.xml */,
+				8FEE307B20615202004BCEF3 /* README */,
+				8FEE307C20615202004BCEF3 /* hebrew.xml */,
+				8FEE307D20615202004BCEF3 /* greek.xml */,
+				8FEE307E20615202004BCEF3 /* ascii.xml */,
+				8FEE307F20615202004BCEF3 /* macce.xml */,
+				8FEE308020615202004BCEF3 /* dec8.xml */,
+				8FEE308120615202004BCEF3 /* latin2.xml */,
+				8FEE308220615202004BCEF3 /* cp850.xml */,
+				8FEE308320615202004BCEF3 /* koi8u.xml */,
+				8FEE308420615202004BCEF3 /* latin1.xml */,
+				8FEE308520615202004BCEF3 /* cp852.xml */,
+				8FEE308620615202004BCEF3 /* latin5.xml */,
+				8FEE308720615202004BCEF3 /* latin7.xml */,
+				8FEE308820615202004BCEF3 /* armscii8.xml */,
+				8FEE308920615202004BCEF3 /* koi8r.xml */,
+			);
+			path = charsets;
+			sourceTree = "<group>";
+		};
+		8FEE308A20615202004BCEF3 /* german */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE308B20615202004BCEF3 /* errmsg.sys */,
+			);
+			path = german;
+			sourceTree = "<group>";
+		};
+		8FEE308C20615202004BCEF3 /* estonian */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE308D20615202004BCEF3 /* errmsg.sys */,
+			);
+			path = estonian;
+			sourceTree = "<group>";
+		};
+		8FEE309020615202004BCEF3 /* hungarian */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE309120615202004BCEF3 /* errmsg.sys */,
+			);
+			path = hungarian;
+			sourceTree = "<group>";
+		};
+		8FEE309320615202004BCEF3 /* slovak */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE309420615202004BCEF3 /* errmsg.sys */,
+			);
+			path = slovak;
+			sourceTree = "<group>";
+		};
+		8FEE309520615202004BCEF3 /* romanian */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE309620615202004BCEF3 /* errmsg.sys */,
+			);
+			path = romanian;
+			sourceTree = "<group>";
+		};
+		8FEE309720615202004BCEF3 /* norwegian-ny */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE309820615202004BCEF3 /* errmsg.sys */,
+			);
+			path = "norwegian-ny";
+			sourceTree = "<group>";
+		};
+		8FEE309D20615202004BCEF3 /* russian */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE309E20615202004BCEF3 /* errmsg.sys */,
+			);
+			path = russian;
+			sourceTree = "<group>";
+		};
+		8FEE309F20615202004BCEF3 /* italian */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30A020615202004BCEF3 /* errmsg.sys */,
+			);
+			path = italian;
+			sourceTree = "<group>";
+		};
+		8FEE30A120615202004BCEF3 /* english */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30A220615202004BCEF3 /* errmsg.sys */,
+			);
+			path = english;
+			sourceTree = "<group>";
+		};
+		8FEE30A320615202004BCEF3 /* greek */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30A420615202004BCEF3 /* errmsg.sys */,
+			);
+			path = greek;
+			sourceTree = "<group>";
+		};
+		8FEE30A520615202004BCEF3 /* norwegian */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30A620615202004BCEF3 /* errmsg.sys */,
+			);
+			path = norwegian;
+			sourceTree = "<group>";
+		};
+		8FEE30A820615202004BCEF3 /* portuguese */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30A920615202004BCEF3 /* errmsg.sys */,
+			);
+			path = portuguese;
+			sourceTree = "<group>";
+		};
+		8FEE30AA20615202004BCEF3 /* danish */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30AB20615202004BCEF3 /* errmsg.sys */,
+			);
+			path = danish;
+			sourceTree = "<group>";
+		};
+		8FEE30AC20615202004BCEF3 /* polish */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30AD20615202004BCEF3 /* errmsg.sys */,
+			);
+			path = polish;
+			sourceTree = "<group>";
+		};
+		8FEE30AE20615202004BCEF3 /* french */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30AF20615202004BCEF3 /* errmsg.sys */,
+			);
+			path = french;
+			sourceTree = "<group>";
+		};
+		8FEE30B020615202004BCEF3 /* swedish */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30B120615202004BCEF3 /* errmsg.sys */,
+			);
+			path = swedish;
+			sourceTree = "<group>";
+		};
+		8FEE30B220615202004BCEF3 /* spanish */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30B320615202004BCEF3 /* errmsg.sys */,
+			);
+			path = spanish;
+			sourceTree = "<group>";
+		};
+		8FEE30B520615202004BCEF3 /* ukrainian */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30B620615202004BCEF3 /* errmsg.sys */,
+			);
+			path = ukrainian;
+			sourceTree = "<group>";
+		};
+		8FEE30B920615202004BCEF3 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30BA20615202004BCEF3 /* mysql */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		8FEE30BA20615202004BCEF3 /* mysql */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30BB20615202004BCEF3 /* ChangeLog */,
+				8FEE30BC20615202004BCEF3 /* INFO_SRC */,
+				8FEE30BD20615202004BCEF3 /* INFO_BIN */,
+			);
+			path = mysql;
+			sourceTree = "<group>";
+		};
+		8FEE30CC20615A77004BCEF3 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE30C92061523F004BCEF3 /* database.h */,
+				8FEE30CA2061523F004BCEF3 /* database.c */,
+			);
+			path = database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,9 +1362,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F1E1408206019CE004BEBF2 /* qrcodegen.c in Sources */,
+				8FEE30BF20615202004BCEF3 /* services.h.pp in Sources */,
+				8FEE30C320615202004BCEF3 /* plugin_keyring.h.pp in Sources */,
 				8FED540A2057DD780003C1E7 /* main.c in Sources */,
+				8FEE30BE20615202004BCEF3 /* plugin_auth.h.pp in Sources */,
 				8FED54122057DD950003C1E7 /* library.c in Sources */,
+				8FEE30C120615202004BCEF3 /* plugin_ftparser.h.pp in Sources */,
+				8FEE30C220615202004BCEF3 /* client_plugin.h.pp in Sources */,
 				8F1E1407206019CE004BEBF2 /* PNGUtils.c in Sources */,
+				8FEE30C020615202004BCEF3 /* plugin_audit.h.pp in Sources */,
+				8FEE30CB2061523F004BCEF3 /* database.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +1485,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GestionPersonnel/mysql/5.7.21/include/mysql";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GestionPersonnel/libpng/1.6.34/lib",
+					"$(PROJECT_DIR)/GestionPersonnel/mysql/5.7.21/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -439,9 +1499,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GestionPersonnel/mysql/5.7.21/include/mysql";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GestionPersonnel/libpng/1.6.34/lib",
+					"$(PROJECT_DIR)/GestionPersonnel/mysql/5.7.21/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

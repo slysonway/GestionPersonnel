@@ -26,6 +26,11 @@ typedef struct informations {
     int Age;
 } Informations;
 
+typedef struct restaurant {
+    int id;
+    char * Name;
+} Restaurant;
+
 char * getString(void);
 void generateQR(char * info);
 void getTime(Date * date);

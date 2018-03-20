@@ -30,7 +30,6 @@ typedef struct  {
 
 static pixel_t * pixel_at (bitmap_t * bitmap, int x, int y);
 static int save_png_to_file (bitmap_t *bitmap, const char *path);
-static int pix (int value, int max);
 int generatePNG(int **buffer, char * FileName);
 void resizeBitMap(QRCode qrcode, int nSize, int *buffer[]);
 

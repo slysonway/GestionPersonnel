@@ -7,6 +7,7 @@
 //
 
 #include "library.h"
+#include "database.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,6 +20,10 @@ int main(int argc, const char * argv[]) {
     Informations people;
     char * ch = malloc(200);
     int choice = 0;
+    
+    Restaurant* test = getRestaurant();
+    
+    
     
     printf("id: ");
     scanf("%d", &people.id);
