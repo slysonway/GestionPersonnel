@@ -25,6 +25,7 @@ Restaurant * getRestaurant()
     MYSQL *con = mysql_init(NULL);
     int i = 0;
     
+    
     if (con == NULL)
     {
         fprintf(stderr, "mysql_init() failed\n");
@@ -69,3 +70,44 @@ Restaurant * getRestaurant()
     
     return _restaurant;
 }
+
+int addUser(Informations information)
+{
+    MYSQL *con = mysql_init(NULL);
+    int id = 0;
+    
+    char * ch = malloc(250);
+    strcat(strcat(strcat(strcat(strcat(ch, "INSERT INTO SALARIE(Nom, Prenom) VALUES('"), information.Name), "','"), information.FirstName), "');");
+    
+    if (con == NULL)
+    {
+        fprintf(stderr, "mysql_init() failed\n");
+        exit(1);
+    }
+    
+    
+    if (mysql_real_connect(con, "localhost", "root", "root",
+                           "2A2_test", 8889, "/Applications/MAMP/tmp/mysql/mysql.sock", 0) == NULL)
+    {
+        finish_with_error(con);
+    }
+    
+    if (mysql_query(con, ch))
+    {
+        finish_with_error(con);
+    }
+    
+    id = (int)mysql_insert_id(con);
+    
+    
+    
+    //mysql_free_result(result);
+    mysql_close(con);
+    
+    free(ch);
+    return id;
+}
+
+
+
+

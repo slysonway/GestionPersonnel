@@ -20,13 +20,33 @@ int main(int argc, const char * argv[]) {
     Informations people;
     char * ch = malloc(200);
     int choice = 0;
+    int index = 0;
     
-    Restaurant* test = getRestaurant();
+    Restaurant* _restaurants = getRestaurant();
     
     
     
-    printf("id: ");
-    scanf("%d", &people.id);
+    do {
+        printf("Restaurant: \n");
+        while (_restaurants[index].id && _restaurants[index].Name) {
+            printf("%d: ", index);
+            printf("%s", _restaurants[index].Name);
+            printf("\n");
+            index++;
+        }
+        index = 0;
+        
+        printf("Choisiser un restaurant dans la liste: ");
+        scanf("%d", &choice);
+        if (_restaurants[choice].id || _restaurants[choice].Name) {
+            people.idrestaurant = _restaurants[choice].id;
+            people.Restaurant = _restaurants[choice].Name;
+        } else {
+            printf("Ce choix n'existe pas\n");
+        }
+        
+    }while (!_restaurants[choice].id || !_restaurants[choice].Name);
+
     
     printf("Nom: ");
     people.Name = getString();
@@ -34,24 +54,11 @@ int main(int argc, const char * argv[]) {
     ch[0] = '\0';
     printf("Prénom: ");
     people.FirstName = getString();
-    
-    printf("Choisissez un restaurant: ");
-    scanf("%d", &choice);
-    switch (choice) {
-        case 1:
-            people.Restaurant = "bastille";
-            break;
-        
-        case 2:
-            people.Restaurant = "republique";
-            break;
-            
-        default:
-            break;
-    }
 
     printf("Age: ");
     scanf("%d", &people.Age);
+    
+    people.id = addUser(people);
     
     getTime(&people.Date);
     

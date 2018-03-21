@@ -22,6 +22,7 @@ typedef struct informations {
     char * Name;
     char * FirstName;
     char * Restaurant;
+    int idrestaurant;
     Date Date;
     int Age;
 } Informations;

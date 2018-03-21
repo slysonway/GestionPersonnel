@@ -99,6 +99,7 @@ void generateQR(char * info) {
     for (int i = 0; i < 250; i++) {
         *(buffer + i) = (int *)malloc(sizeof(int) * 250);
     }
+    
     resizeBitMap(qrcode, 250, buffer);
     generatePNG(buffer, info);
 }

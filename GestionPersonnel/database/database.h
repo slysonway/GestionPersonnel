@@ -13,5 +13,7 @@
 #include "library.h"
 
 Restaurant * getRestaurant(void);
+int addUser(Informations information);
+
 
 #endif /* database_h */
