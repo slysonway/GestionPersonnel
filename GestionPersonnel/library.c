@@ -89,18 +89,52 @@ char * xmlName(Informations information) {
 void generateQR(char * info) {
     // The structure to manage the QR code
     QRCode qrcode;
+    int border = 1;
+    int **buffer;
+    int **qrcodeBorder = NULL;
+    int i, x, y;
+    int size;
+
     
     // Allocate a chunk of memory to store the QR code
     uint8_t qrcodeBytes[qrcode_getBufferSize(1)];
     
     qrcode_initText(&qrcode, qrcodeBytes, 2, ECC_LOW, info);
-    int **buffer;
-    buffer = (int**)malloc(sizeof(int *) * 250);
-    for (int i = 0; i < 250; i++) {
-        *(buffer + i) = (int *)malloc(sizeof(int) * 250);
+    
+    size = qrcode.size + (border * 2);
+    qrcodeBorder = (int **)malloc(sizeof(int*) * size);
+    for (i = 0; i < size; i++) {
+        *(qrcodeBorder + i) = (int *) malloc(sizeof(int) * size);
+     }
+    
+    for (x = 0; x < size; x++) {
+        for (y = 0; y < size; y++) {
+            qrcodeBorder[x][y] = 0;
+            //printf("%s", qrcode_getModule(&qrcode, x, y)? "##" : "  ");
+        }
+        //printf("\n");
+    }
+    //printf("\n");
+    
+    
+    for (x = border; x < (size - border); x++) {
+        for (y = border; y < (size - border); y++) {
+            qrcodeBorder[x][y] = qrcode_getModule(&qrcode, (x - border), (y - border));
+            //printf("%s", qrcodeBorder[x][y]? "##": "  ");
+            //printf("%s", qrcode_getModule(&qrcode, (x - border), (y - border))? "##" : "  ");
+        }
+        //printf("\n");
+    }
+    //printf("\n");
+    
+    
+    buffer = (int**)malloc(sizeof(int *) * 270);
+    
+    for (i = 0; i < 270; i++) {
+        *(buffer + i) = (int *)malloc(sizeof(int) * 270);
     }
     
-    resizeBitMap(qrcode, 250, buffer);
+    resizeBitMap(qrcodeBorder, 270, buffer, size);
     generatePNG(buffer, info);
 }
 

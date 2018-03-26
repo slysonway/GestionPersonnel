@@ -15,7 +15,6 @@
 
 
 int main(int argc, const char * argv[]) {
-    
     //int FakeId = 0;
     Informations people;
     char * ch = malloc(200);
@@ -23,9 +22,6 @@ int main(int argc, const char * argv[]) {
     int index = 0;
     
     Restaurant* _restaurants = getRestaurant();
-    
-    
-    
     do {
         printf("Restaurant: \n");
         while (_restaurants[index].id && _restaurants[index].Name) {
@@ -45,7 +41,7 @@ int main(int argc, const char * argv[]) {
             printf("Ce choix n'existe pas\n");
         }
         
-    }while (!_restaurants[choice].id || !_restaurants[choice].Name);
+    } while (!_restaurants[choice].id || !_restaurants[choice].Name);
 
     
     printf("Nom: ");
@@ -57,6 +53,8 @@ int main(int argc, const char * argv[]) {
 
     printf("Age: ");
     scanf("%d", &people.Age);
+    
+    printf("\n");
     
     people.id = addUser(people);
     

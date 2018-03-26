@@ -118,8 +118,8 @@ int generatePNG(int **qrcode, char * filename)
     
     /* Create an image. */
     
-    fruit.width = 250;
-    fruit.height = 250;
+    fruit.width = 270;
+    fruit.height = 270;
     
     
     
@@ -153,11 +153,11 @@ int generatePNG(int **qrcode, char * filename)
     return 0;
 }
 
-void resizeBitMap(QRCode qrcode, int nSize, int *buffer[]) {
+void resizeBitMap(int ** qrcode, int nSize, int *buffer[], int oSize) {
     
     int x, y, i, j;
     
-    int size = qrcode.size;
+    int size = oSize;
     
     int ratio = nSize / size;
     
@@ -166,7 +166,7 @@ void resizeBitMap(QRCode qrcode, int nSize, int *buffer[]) {
         for (y = 0; y < size; y++) {
             for (i = 0; i < ratio; i++) {
                 for (j = 0; j < ratio ; j++) {
-                    buffer[(ratio * x) + i][(ratio * y) + j] = qrcode_getModule(&qrcode, x, y);
+                    buffer[(ratio * x) + i][(ratio * y) + j] = qrcode[x][y];
                 }
             }
         }
